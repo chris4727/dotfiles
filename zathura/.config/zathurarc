@@ -1,0 +1,27 @@
+# ==  ZATHURARC  =============================
+#  Configuration for Zathura pdf reader
+#=============================================
+
+# ==  THEME  =================================
+include themes/gruvbox.conf
+
+# ==  KEYMAPS  ===============================
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map J zoom in
+map K zoom out
+map i recolor
+map p print
+
+# ==  OPTIONS  ===============================
+set font "FiraCode Nerd Font 10"
+set selection-clipboard clipboard
+set statusbar-home-tilde true
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set recolor true
+set recolor-keephue true
