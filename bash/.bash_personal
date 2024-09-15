@@ -1,0 +1,211 @@
+#================================================
+# .bash_personal
+#================================================
+# This file is sourced by ~/.bashrc
+
+# TODO Move these to either standalone scripts, or ~/.bash_personal
+
+# Find most common commands using: 
+# TODO Get this alias working to show top commands in history
+#alias hist='history | awk '{cmd[$2]++} END {for(elem in cmd) {print cmd[elem] " " elem}}' | sort -n -r | head -10'
+
+# ---  ENVIRONMENT VARIABLES  --------------------
+
+export TERMINAL="kitty"
+export BROWSER="/usr/bin/firefox"
+
+export MEDIA="/run/media/$USER"
+export NOTES="$HOME/Notes"
+export REPOS="$HOME/Repos"
+export SCRIPTS="$HOME/.local/bin"
+export SNIPPETS="$HOME/.vim/UltiSnips"
+
+# ---   CDPATH   ---------------------------------
+
+export CDPATH=".:$MEDIA:$HOME"
+
+alias today='date +"%Y-%m-%d %H:%M:%S"'
+alias ?='duck'
+
+# ---   LIST   -----------------------------------
+
+# TODO These aliases are also defined in ~/.config/bash/aliases
+#alias ls='ls --color=always'
+#alias la='ls -a --color=always'
+#alias ll='ls -lah --color=always'
+# Tree with colors, icons, and show git status
+alias lt='eza --tree --level=2 --icons --git'
+alias lt3='eza --tree --level=3 --icons --git'
+# TODO setup if statement to check if eza is installed.
+#alias ls='eza --icons --git --group-directories-first'
+#alias la='eza -a --icons --git --group-directories-first'
+#alias ll='eza -lah --icons --git --group-directories-first'
+## Tree with colors, icons, and show git status
+#alias lt='eza --tree --level=2 --icons --git'
+#alias lt3='eza --tree --level=3 --icons --git'
+
+# ---   FILE HANDLING   --------------------------
+
+alias rcp="rsync --archive --human-readable --progress --verbose"
+
+# ---   BOOKMARKS   ------------------------------
+
+alias cddb='cd $HOME/Dropbox/ && ll'
+alias cddc='cd $DOCUMENTS && ll'
+alias cddn='cd $DOWNLOADS && ll'
+alias cdpc='cd $PICTURES && ll'
+alias cdvd='cd $VIDEOS && ll'
+alias cdrp='cd $REPOS && ll'
+alias cdsh='cd $SCRIPTS && ll'
+alias cdsn='cd $SNIPPETS && ll'
+alias cdn='cd $NOTES && ll'
+alias cdtr='cd $HOME/.local/share/Trash/files/ && ll'
+
+# ---  PACKAGE MANAGER  ----------------------- 
+
+# TODO Update for paru package manager
+alias pacup='pacman -Syu && paru'			# Update
+alias pacls='pacman -Qet'					# List user installed packages
+alias pacs='pacman -Ss'					# Search repositories for package
+#alias pacs='pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
+alias paci='pacman -S'						# Install package
+#alias pacr='pacman -Rs'					# Remove package
+alias pacc='pacman -Qdtq | pacman -Rs'		# Cleanup packages
+
+# ---   APPLICATION LAUNCHERS   ------------------
+
+alias lock='betterlockscreen -l ~/.config/wallpaper/'	# Lock the computer
+# TODO Setup script to read user unput to identify file to set as wallpaper.
+# Copy image to wallpaper directory, and set as wallpaper (will need to refresh window manager).
+alias wall='cp -i $HOME/.config/wallpaper/wallpaper.jpg'
+
+# ---   FILES   ----------------------------------
+
+alias open='xdg-open'		# Open using default program
+# TODO Set i3 to play mpv and feh fullscreen
+alias icat='kitty +kitten icat'	# Image cat
+
+# ---   SYSTEM MANAGEMENT   ----------------------
+
+# Show disk usage sorted and summarized
+alias btm='btm --battery'
+
+# ---   FETCH   ----------------------------------
+
+alias neofetch='clear && neofetch'
+
+# ---   POWER   ----------------------------------
+
+# TODO setup rofi powermenu script 
+# See: https://github.com/ericmurphyxyz/dotfiles/blob/master/.local/bin/powermenu
+alias reboot='shutdown -r now'
+
+# ---   GREP   -----------------------------------
+
+alias fontgrep='fc-list | grep -i --color=auto'
+
+# ---   DISKS   ---------------------------------
+
+# Rip audio CD to flac
+alias ripcd='abcde -o flac -c $HOME/.config/abcde/abcde.conf'
+# Rip audiobook CD to voice optimized, low bitrate opus
+alias ripbook='abcde -o opus -c $HOME/.config/abcde/abcdebook.conf'
+# Rip DVD
+#makeMKV plus handbrake. 
+#https://github.com/automatic-ripping-machine/automatic-ripping-machine
+
+# ---   GIT BARE   -------------------------------
+
+dot() {
+  alias dot='/usr/bin/git --git-dir=$DOTFILES --work-tree=$HOME'
+}
+
+dotnew () {
+  # Include gitlab url as argument
+  git clone --bare $1 $DOTFILES
+  dot config --local status.showUntrackedFiles no
+  dot switch -c base
+
+  echo "Add and commit additional files"
+  echo "using \`dot add\` and \`dot commit\`, then run"
+  echo "dot push -u origin base"
+}
+
+dotrestore () {
+  # Include gitlab url as argument
+  git clone -b base --bare $1 $DOTFILES
+  dot config --local status.showUntrackedFiles no
+  dot checkout || printf "Backup or remove conflicting files, then run:\ndot checkout\nAdd \`-f\` flag to forcibly overwrite existing files."
+}
+
+alias ldot='lazygit --git-dir=$DOTFILES --work-tree=$HOME'
+alias dots='dot status -sb'							# Git status
+alias dotu='dot pull'								# Git pull (update)
+alias dota='dot add'									# Git add
+alias dotl='dot log --oneline'						# Git log
+alias dotd='dot diff origin/main'					# Diff staged changes
+alias dotv='dot difftool -t vimdiff -y'				# Git vimdiff
+alias dotc='dot commit'								# Commit message in editor
+alias dotp='dot push -u origin main'					# Git push to origin
+
+# ---   TASKWARRIOR   ----------------------------
+
+alias t='task'				# Taskwarrior
+alias tv='vit'				# Vit TUI for taskwarrior
+alias tad='task add'		# Add new task
+alias tsu='task summary'	# Add new task
+alias tcal='task calendar'	# View task calendar
+
+# ---   PANDOC   ---------------------------------
+
+# When using this alias, input `pandocmd input.md -o output.pdf
+alias pandocmd='pandoc -f markdown -t pdf --pdf-engine=lualatex' 
+
+# ---  FUNCTIONS  --------------------------------
+
+# Change directories with fzf
+fcd() {
+cd $HOME && cd "$(find * -type d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)" && clear && exa --tree --level=1 --icons --git
+}
+
+# Open files with fzf
+fopen() {
+file="$(find -type f | fzf --preview="head -$LINES {}")"
+if [ -n "$file" ]; then
+    mimetype="$(xdg-mime query filetype $file)"
+    default="$(xdg-mime query default $mimetype)"
+    if [[ "$default" == "vim.desktop" ]]; then
+        vim "$file"
+    else
+        &>/dev/null xdg-open "$file" & disown
+    fi
+fi
+}
+
+# Find local scripts with fzf
+# TODO Have fzf put the name of the script in the command Prompt
+#      to allow it to be run. Currently, just echoes name of
+#      script and current dir path to stdout.
+fsh() {
+cd $HOME/.local/bin/
+find -type f | fzf --preview="head -$LINES {}"
+cd -
+}
+
+# Search pacman repo with fzf. 
+# <space> toggles preview of selected package
+# Tab selects and allows additional selections
+# Enter installs selected packages
+fpac() {
+sudo pacman -S $(pacman -Ssq | fzf --multi --preview="pacman -Si {}" --preview-window=:hidden --bind=space:toggle-preview)
+}
+
+pacrm() {
+# Lists all user-installed packages '-Qet'. '-q' forces plain text.
+pacman -Qetq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rs
+}
+
+# ---  BINDINGS  ---------------------------------
+
+bind '"\C-f":"fcd\n"'
+bind '"\C-o":"fopen\n"'
