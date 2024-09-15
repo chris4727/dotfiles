@@ -4,10 +4,12 @@ Personal dotfile repository.
 
 # TODO
 
-- [ ] Setup Git Stow
+- [x] Setup Git Stow
 - [ ] Transfer existing dotfiles to this repository
-  - [ ] Bash
-  - [ ] Vim
-  - [ ] Tmux
+  - [ ] Git
   - [ ] Kitty
+  - [x] ls dircolors
   - [ ] Others?
+  - [x] Bash
+  - [x] Tmux
+  - [x] Vim
