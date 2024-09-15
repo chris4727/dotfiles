@@ -13,3 +13,4 @@ Personal dotfile repository.
   - [x] Bash
   - [x] Tmux
   - [x] Vim
+  - [x] Zathura pdf reader
