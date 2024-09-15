@@ -114,40 +114,6 @@ alias ripbook='abcde -o opus -c $HOME/.config/abcde/abcdebook.conf'
 #makeMKV plus handbrake. 
 #https://github.com/automatic-ripping-machine/automatic-ripping-machine
 
-# ---   GIT BARE   -------------------------------
-
-dot() {
-  alias dot='/usr/bin/git --git-dir=$DOTFILES --work-tree=$HOME'
-}
-
-dotnew () {
-  # Include gitlab url as argument
-  git clone --bare $1 $DOTFILES
-  dot config --local status.showUntrackedFiles no
-  dot switch -c base
-
-  echo "Add and commit additional files"
-  echo "using \`dot add\` and \`dot commit\`, then run"
-  echo "dot push -u origin base"
-}
-
-dotrestore () {
-  # Include gitlab url as argument
-  git clone -b base --bare $1 $DOTFILES
-  dot config --local status.showUntrackedFiles no
-  dot checkout || printf "Backup or remove conflicting files, then run:\ndot checkout\nAdd \`-f\` flag to forcibly overwrite existing files."
-}
-
-alias ldot='lazygit --git-dir=$DOTFILES --work-tree=$HOME'
-alias dots='dot status -sb'							# Git status
-alias dotu='dot pull'								# Git pull (update)
-alias dota='dot add'									# Git add
-alias dotl='dot log --oneline'						# Git log
-alias dotd='dot diff origin/main'					# Diff staged changes
-alias dotv='dot difftool -t vimdiff -y'				# Git vimdiff
-alias dotc='dot commit'								# Commit message in editor
-alias dotp='dot push -u origin main'					# Git push to origin
-
 # ---   TASKWARRIOR   ----------------------------
 
 alias t='task'				# Taskwarrior
