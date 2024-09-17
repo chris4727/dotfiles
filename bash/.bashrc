@@ -184,5 +184,5 @@ eval "$(pandoc --bash-completion)"
 
 # ---  BINDINGS  ---------------------------------
 
-bind '"\C-v":"vim\n"'
+#bind '"\C-v":"vim\n"'
 
