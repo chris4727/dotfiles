@@ -27,23 +27,6 @@ export CDPATH=".:$MEDIA:$HOME"
 alias today='date +"%Y-%m-%d %H:%M:%S"'
 alias ?='duck'
 
-# ---   LIST   -----------------------------------
-
-# TODO These aliases are also defined in ~/.config/bash/aliases
-#alias ls='ls --color=always'
-#alias la='ls -a --color=always'
-#alias ll='ls -lah --color=always'
-# Tree with colors, icons, and show git status
-alias lt='eza --tree --level=2 --icons --git'
-alias lt3='eza --tree --level=3 --icons --git'
-# TODO setup if statement to check if eza is installed.
-#alias ls='eza --icons --git --group-directories-first'
-#alias la='eza -a --icons --git --group-directories-first'
-#alias ll='eza -lah --icons --git --group-directories-first'
-## Tree with colors, icons, and show git status
-#alias lt='eza --tree --level=2 --icons --git'
-#alias lt3='eza --tree --level=3 --icons --git'
-
 # ---   FILE HANDLING   --------------------------
 
 alias rcp="rsync --archive --human-readable --progress --verbose"
@@ -63,7 +46,7 @@ alias cdtr='cd $HOME/.local/share/Trash/files/ && ll'
 
 # ---  PACKAGE MANAGER  ----------------------- 
 
-# TODO Update for paru package manager
+# TODO Move to update script that checks distro for Arch vs Debian
 alias pacup='pacman -Syu && paru'			# Update
 alias pacls='pacman -Qet'					# List user installed packages
 alias pacs='pacman -Ss'					# Search repositories for package
