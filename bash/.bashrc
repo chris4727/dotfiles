@@ -173,7 +173,7 @@ _have pandoc && . <(pandoc --bash-completion)
 # --- PERSONALIZED CONFIGURATIONS  ---------------
 
 #_source_if "$HOME/.config/bash/aliases.local"
-#_source_if "$HOME/.config/bash/aliases"
+_source_if "$HOME/.bash_aliases"
 _source_if "$HOME/.bash_personal"
 _source_if "$HOME/.bash_private"
 _source_if "$HOME/.bash_work"
