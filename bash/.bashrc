@@ -36,7 +36,7 @@ export DISTRO
 # TODO Does this work on Windows? Add if $DISTRO != windows if needed.
 test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
 
-# --- SETTINGS  ----------------------------------
+# ---  SETTINGS  ----------------------------------
 
 # Use vim keybindings:
 set -o vi
@@ -52,14 +52,14 @@ export HISTTIMEFORMAT="%Y%m%d%H%M%S "
 # Append to the history file, don't overwrite it.
 shopt -s histappend
 
-# --- PAGER  -------------------------------------
+# ---  PAGER  -------------------------------------
 
 if [[ -x /usr/bin/lesspipe ]]; then
 	export LESSOPEN="| /usr/bin/lesspipe %s"
 	export LESSCLOSE="/usr/bin/lesspipe %s %s"
 fi
 
-# --- DIRCOLORS  ---------------------------------
+# ---  DIRCOLORS  ---------------------------------
 
 if _have dircolors; then
 	if [[ -r "$HOME/.config/ls/dircolors" ]]; then
