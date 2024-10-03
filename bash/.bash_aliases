@@ -1,5 +1,5 @@
 #================================================
-# .aliases
+# .bash_aliases
 #================================================
 # This file is sourced by ~/.bashrc
 
@@ -8,8 +8,6 @@
 #alias hist='history | awk '{cmd[$2]++} END {for(elem in cmd) {print cmd[elem] " " elem}}' | sort -n -r | head -10'
 # https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=%s
 
-# List
-#------------------------------------------------
 # ---  GENERAL  ---------------------------------
 
 alias c='printf "\e[H\e[2J"'
@@ -25,6 +23,8 @@ alias diffdir='diff -qr'
 alias todo='$EDITOR $NOTES/TODO.md'
 alias now='date +"%Y-%m-%d %H:%M:%S"'
 
+# ---  LIST  -----------------------------------
+
 alias ls='ls -F --color=auto --group-directories-first'
 alias la='ls -aF --color=auto --group-directories-first'
 alias ll='ls -lAhF --color=auto --group-directories-first --time-style=long-iso --ignore=lost+found'
@@ -32,14 +32,12 @@ alias ll='ls -lAhF --color=auto --group-directories-first --time-style=long-iso 
 alias lt='tree'
 alias lr='ls -AFR --color=auto --group-directories-first --time-style=long-iso --ignore=lost+found'
 
-# File handling
-#------------------------------------------------
+# ---  FILE HANDLING  -----------------------------------
 
-# Edit config files
-#------------------------------------------------
 alias rcp="rsync --archive --human-readable --progress --verbose"
 
 # ---  PACAGE MANAGER  ----------------------- 
+
 # TODO Update for paru package manager
 alias pacu='pacman -Syu && paru'			# Update
 alias pacls='pacman -Qet'					# List user installed packages
@@ -49,50 +47,49 @@ alias paci='pacman -S'						# Install package
 #alias pacr='pacman -Rs'					# Remove package
 alias pacc='pacman -Qdtq | pacman -Rs'		# Cleanup packages
 
-# Application launchers
-#------------------------------------------------
+# ---  APPLICATION LAUNCHERS  -----------------------------------
+
 alias vim='$EDITOR'
 alias lock='betterlockscreen -l ~/.config/wallpaper/'	# Lock the computer
 # TODO Setup script to read user unput to identify file to set as wallpaper.
 # Copy image to wallpaper directory, and set as wallpaper (will need to refresh window manager).
 alias wall='cp -i $HOME/.config/wallpaper/wallpaper.jpg'
 
-# Files
-#------------------------------------------------
+# ---  FILES  -----------------------------------
+
 alias open='xdg-open'		# Open using default program
 # TODO Set i3 to play mpv and feh fullscreen
 alias icat='kitty +kitten icat'	# Image cat
 alias image='magick'			# Convert image with imagemagick
 
-# System management
-#------------------------------------------------
+# ---  SYSTEM MANAGEMENT  -----------------------------------
 
 # Show disk usage sorted and summarized
 alias btm='btm --battery'
 
-# Fetch
-#------------------------------------------------
+# ---  FETCH  -----------------------------------
+
 alias neofetch='clear && neofetch'
 
-# Shutdown
-#------------------------------------------------
+# ---  SHUTDOWN  -----------------------------------
+
 # TODO setup rofi powermenu script 
 # See: https://github.com/ericmurphyxyz/dotfiles/blob/master/.local/bin/powermenu
 alias reboot='shutdown -r now'
 
-# Grep
-#------------------------------------------------
+# ---  GREP  -----------------------------------
+
 alias fontgrep='fc-list | grep -i --color=auto'
 
-# Rip disks to file
-#------------------------------------------------
+# ---  RIP DISKS TO FILE  -----------------------------------
+
 # Rip audio CD to flac
 alias abcde='abcde -o flac -c $HOME/.config/abcde/abcde.conf'
 # Rip audiobook CD to voice optimized, low bitrate opus
 alias ripbook='abcde -o opus -c $HOME/.config/abcde/abcdebook.conf'
 
-# Git
-#------------------------------------------------
+# ---  GIT  -----------------------------------
+
 alias lgit='lazygit'									# Git helper
 alias gits='git status -sb'							# Git status
 alias gitu='git pull'								# Git pull (update)
@@ -104,16 +101,16 @@ alias gitv='git difftool -t vimdiff -y'				# Git vimdiff
 alias gitc='git commit'								# Commit message in editor
 alias gitp='git push -u origin main'				# Git push to origin
 
-# Taskwarrior
-#------------------------------------------------
+# ---  TASKWARRIOR  -----------------------------------
+
 alias t='task'				# Taskwarrior
 alias tv='vit'				# Vit TUI for taskwarrior
 alias tad='task add'		# Add new task
 alias tsu='task summary'	# Add new task
 alias tcal='task calendar'	# View task calendar
 
-# yt download
-#------------------------------------------------
+# ---  YT DOWNLOAD  -----------------------------------
+
 #List available codecs
 alias ytls='yt-dlp -F'
 # Extract audio, m4a best quality
