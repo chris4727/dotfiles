@@ -19,12 +19,6 @@ alias ll='ls -lAhF --color=auto --group-directories-first --time-style=long-iso 
 # Tree with colors, icons, and show git status
 alias lt='tree'
 alias lr='ls -AFR --color=auto --group-directories-first --time-style=long-iso --ignore=lost+found'
-#alias ls='eza --icons --git --group-directories-first'
-#alias la='eza -a --icons --git --group-directories-first'
-#alias ll='eza -lah --icons --git --group-directories-first'
-## Tree with colors, icons, and show git status
-#alias lt='eza --tree --level=2 --icons --git'
-#alias lt3='eza --tree --level=3 --icons --git'
 
 # File handling
 #------------------------------------------------
