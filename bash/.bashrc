@@ -114,10 +114,6 @@ alias vi='$EDITOR'
 alias dus='du -d 1 -h | sort -h'
 alias grep='grep --color=auto'
 alias diff='diff -u --color'
-# Configs
-alias evi='$EDITOR $HOME/.vimrc'
-alias esh='$EDITOR $HOME/.bashrc'
-alias etm='$EDITOR $HOME/.tmux.conf'
 alias diffdir='diff -qr'
 alias todo='$EDITOR $NOTES/TODO.md'
 
