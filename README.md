@@ -7,7 +7,7 @@ Personal dotfile repository.
 - [x] Setup Git Stow
 - [ ] Transfer existing dotfiles to this repository
   - [ ] Git
-  - [ ] Kitty
+  - [x] Kitty
   - [x] ls dircolors
   - [ ] Others?
   - [x] Bash
