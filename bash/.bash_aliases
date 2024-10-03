@@ -109,19 +109,6 @@ alias gitv='git difftool -t vimdiff -y'				# Git vimdiff
 alias gitc='git commit'								# Commit message in editor
 alias gitp='git push -u origin main'				# Git push to origin
 
-# Git config bare repo ~/.cfg
-#------------------------------------------------
-alias ldot='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dots='dot status -sb'							# Git status
-alias dotu='dot pull'								# Git pull (update)
-alias dota='dot add'									# Git add
-alias dotl='dot log --oneline'						# Git log
-alias dotd='dot diff origin/main'					# Diff staged changes
-alias dotv='dot difftool -t vimdiff -y'				# Git vimdiff
-alias dotc='dot commit'								# Commit message in editor
-alias dotp='dot push -u origin main'					# Git push to origin
-
 # Taskwarrior
 #------------------------------------------------
 alias t='task'				# Taskwarrior
