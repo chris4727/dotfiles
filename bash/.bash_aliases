@@ -117,11 +117,6 @@ alias tad='task add'		# Add new task
 alias tsu='task summary'	# Add new task
 alias tcal='task calendar'	# View task calendar
 
-# Pandoc
-#------------------------------------------------
-# When using this alias, input `pandocmd input.md -o output.pdf
-alias pandocmd='pandoc -f markdown -t pdf --pdf-engine=lualatex' 
-
 # yt download
 #------------------------------------------------
 #List available codecs
