@@ -3,16 +3,28 @@
 #================================================
 # This file is sourced by ~/.bashrc
 
-# TODO Move these to either standalone scripts, or ~/.bash_personal
-
 # Find most common commands using: 
 # TODO Get this alias working to show top commands in history
 #alias hist='history | awk '{cmd[$2]++} END {for(elem in cmd) {print cmd[elem] " " elem}}' | sort -n -r | head -10'
 # https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=%s
-alias today='date +"%Y-%m-%d %H:%M:%S"'
 
 # List
 #------------------------------------------------
+# ---  GENERAL  ---------------------------------
+
+alias c='printf "\e[H\e[2J"'
+alias ip="curl http://myip.dnsomatic.com && echo ''"
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias vi='$EDITOR'
+alias dus='du -d 1 -h | sort -h'
+alias grep='grep --color=auto'
+alias diff='diff -u --color'
+alias diffdir='diff -qr'
+alias todo='$EDITOR $NOTES/TODO.md'
+alias now='date +"%Y-%m-%d %H:%M:%S"'
+
 alias ls='ls -F --color=auto --group-directories-first'
 alias la='ls -aF --color=auto --group-directories-first'
 alias ll='ls -lAhF --color=auto --group-directories-first --time-style=long-iso --ignore=lost+found'
@@ -22,27 +34,10 @@ alias lr='ls -AFR --color=auto --group-directories-first --time-style=long-iso -
 
 # File handling
 #------------------------------------------------
-alias rcp="rsync --archive --human-readable --progress --verbose"
-
-# Bookmarks for common files/directories
-#------------------------------------------------
-alias cdcf='cd $HOME/.config/ && ll'
-alias cddb='cd $HOME/Dropbox/ && ll'
-alias cddc='cd $HOME/Documents/ && ll'
-alias cddn='cd $HOME/Downloads/ && ll'
-alias cdpc='cd $HOME/Pictures/ && ll'
-alias cdvd='cd $HOME/Videos/ && ll'
-alias cdrp='cd $HOME/Repos/ && ll'
-alias cdsh='cd $HOME/.local/bin/ && ll'
-alias cdsn='cd $HOME/.vim/UltiSnips/ && ll'
-alias cdwi='cd $HOME/Wiki/ && ll'
-alias cdn='cd $HOME/Notes/ && ll'
-alias cdtr='cd $HOME/.local/share/Trash/files/ && ll'
 
 # Edit config files
 #------------------------------------------------
-alias ea='$EDITOR $HOME/.config/bash/aliases'
-alias ewi='cd $HOME/Wiki/ && $EDITOR index.wiki' # cd to wiki and open in editor.
+alias rcp="rsync --archive --human-readable --progress --verbose"
 
 # ---  PACAGE MANAGER  ----------------------- 
 # TODO Update for paru package manager

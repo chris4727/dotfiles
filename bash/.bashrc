@@ -103,32 +103,6 @@ pathappend \
 	/usr/local/bin \
 	/bin
 
-# ---  ALIASES  ----------------------------------
-
-alias c='printf "\e[H\e[2J"'
-alias ip="curl http://myip.dnsomatic.com && echo ''"
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
-alias vi='$EDITOR'
-alias dus='du -d 1 -h | sort -h'
-alias grep='grep --color=auto'
-alias diff='diff -u --color'
-alias diffdir='diff -qr'
-alias todo='$EDITOR $NOTES/TODO.md'
-
-# GIT
-alias lgit='lazygit'									# Git helper
-alias gits='git status -sb'							# Git status
-alias gita='git add'								# Git add
-alias gitc='git commit'								# Commit message in editor
-alias gitl='git log --oneline'						# Git log
-alias gitu='git pull'								# Git pull (update)
-alias gitp='git push -u origin main'				# Git push to origin
-alias gitv='git difftool -t vimdiff -y'				# Git vimdiff
-alias gitd='git diff origin/main'					# Diff staged changes
-alias gitg='!git rev-list --all | xargs git grep -F'	# Search commits (grep)
-
 # ---  PROMPT  -----------------------------------
 # Define color variables
 # Surround escape codes with `\[\]` to prevent overwriting prompt
@@ -173,12 +147,4 @@ _source_if "$HOME/.bash_aliases"
 _source_if "$HOME/.bash_personal"
 _source_if "$HOME/.bash_private"
 _source_if "$HOME/.bash_work"
-
-# ---  COMPLETION  -------------------------------
-
-eval "$(pandoc --bash-completion)"
-
-# ---  BINDINGS  ---------------------------------
-
-#bind '"\C-v":"vim\n"'
 
