@@ -52,7 +52,7 @@ alias ewi='cd $HOME/Wiki/ && $EDITOR index.wiki' # cd to wiki and open in editor
 
 # ---  PACAGE MANAGER  ----------------------- 
 # TODO Update for paru package manager
-alias pacup='pacman -Syu && paru'			# Update
+alias pacu='pacman -Syu && paru'			# Update
 alias pacls='pacman -Qet'					# List user installed packages
 alias pacs='pacman -Ss'					# Search repositories for package
 #alias pacs='pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
