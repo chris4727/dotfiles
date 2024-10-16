@@ -2,6 +2,18 @@
 
 Personal dotfile repository.
 
+# Usage
+
+## Window manager
+
+- *Move to workspace <num>* = `Super+<num>`
+- *Split vertically (right)* = `Super+v`
+- *Split horizontally (down)* = `Super+d`
+- *Move to right window* = `Super+l` or `Super+Right`
+- *Move to left window* = `Super+h` or `Super+Left`
+- *Move to lower window* = `Super+j` or `Super+Down`
+- *Move to upper window* = `Super+k` or `Super+Up`
+
 ## Tmux
 
 - *Leader key* = `Ctrl+Space`
