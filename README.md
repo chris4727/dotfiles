@@ -29,8 +29,8 @@ Personal dotfile repository.
 - *Create new window* = `Leader w`
 - *Rename window* = `Leader r`
 - *Move to window <num>* = `Leader <num>`
-- *Split vertically (right)* = `Leader v`
-- *Split horizontally (down)* = `Leader d`
+- *Split pane vertically (right)* = `Leader v`
+- *Split pane horizontally (down)* = `Leader d`
 - *Zoom pane* = `Leader z`
 - *Move to right pane* = `Alt+l` or `Alt+Right`
 - *Move to left pane* = `Alt+h` or `Alt+Left`
