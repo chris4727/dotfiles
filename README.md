@@ -31,6 +31,7 @@ Personal dotfile repository.
 - *Move to window <num>* = `Leader <num>`
 - *Split vertically (right)* = `Leader v`
 - *Split horizontally (down)* = `Leader d`
+- *Zoom pane* = `Leader z`
 - *Move to right pane* = `Alt+l` or `Alt+Right`
 - *Move to left pane* = `Alt+h` or `Alt+Left`
 - *Move to lower pane* = `Alt+j` or `Alt+Down`
