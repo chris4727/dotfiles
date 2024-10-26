@@ -21,12 +21,22 @@ Personal dotfile repository.
 - *Move to left window* = `Super+h` or `Super+Left`
 - *Move to lower window* = `Super+j` or `Super+Down`
 - *Move to upper window* = `Super+k` or `Super+Up`
+- *Open new terminal window* = `Super+Enter`
+
+## Terminal
+
+Tabs in the terminal are generally used to contain Tmux sessions when on different servers. Typically tab 1 is the current computer, and additional tabs are servers connected through SSH. This prevents having to have nested Tmux sessions.
+
+- *New terminal tab* = `Ctrl+Shift+t`
+- *Move to left tab* = `Ctrl+Shift+left`
+- *Move to right tab* = `Ctrl+Shift+right`
 
 ## Tmux
 
+- *Alias to create or attach to Tmux session* = `tmx`
 - *Leader key* = `Ctrl+Space`
 - *List sessions* = `Leader s`
-- *Create new window* = `Leader w`
+- *Create new window and prompt for name* = `Leader w`
 - *Rename window* = `Leader r`
 - *Move to window <num>* = `Leader <num>`
 - *Split pane vertically (right)* = `Leader v`
