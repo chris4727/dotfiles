@@ -54,6 +54,7 @@ alias lock='betterlockscreen -l ~/.config/wallpaper/'	# Lock the computer
 # TODO Setup script to read user unput to identify file to set as wallpaper.
 # Copy image to wallpaper directory, and set as wallpaper (will need to refresh window manager).
 alias wall='cp -i $HOME/.config/wallpaper/wallpaper.jpg'
+alias tmx='tmux new-session -A -s Tmux'
 
 # ---  FILES  -----------------------------------
 
