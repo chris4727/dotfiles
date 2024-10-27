@@ -33,7 +33,7 @@ Tabs in the terminal are generally used to contain Tmux sessions when on differe
 
 ## Tmux
 
-- *Alias to create or attach to Tmux session* = `tmx`
+- *Alias to create or attach to Tmux session* = `tmx` or `Ctrl+t`
 - *Leader key* = `Ctrl+Space`
 - *List sessions* = `Leader s`
 - *Create new window and prompt for name* = `Leader w`
