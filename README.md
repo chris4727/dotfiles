@@ -39,6 +39,9 @@ Tabs in the terminal are generally used to contain Tmux sessions when on differe
 - *Create new window and prompt for name* = `Leader w`
 - *Rename window* = `Leader r`
 - *Move to window <num>* = `Leader <num>`
+- *Close window* = `Alt+q`
+
+- *Close pane* = `Alt+x`
 - *Split pane vertically (right)* = `Leader v`
 - *Split pane horizontally (down)* = `Leader d`
 - *Zoom pane* = `Leader z`
