@@ -9,7 +9,7 @@
 
 # Change directories with fzf
 fcd() {
-cd $HOME && cd "$(find * -type d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)" && clear && exa --tree --level=1 --icons --git
+cd $HOME && cd "$(find * -type d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)" && clear && ls -lah
 }
 
 # Open files with fzf
