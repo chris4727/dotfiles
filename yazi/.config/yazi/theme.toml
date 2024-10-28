@@ -42,7 +42,7 @@ count_selected = { fg = "white", bg = "yellow" }
 
 # Border
 border_symbol = "│"
-border_style  = { fg = "gray" }
+border_style  = { fg = "darkgray" }
 
 # Highlighting
 syntect_theme = ""
@@ -55,7 +55,7 @@ syntect_theme = ""
 [status]
 separator_open  = ""
 separator_close = ""
-separator_style = { fg = "gray", bg = "gray" }
+separator_style = { fg = "black", bg = "black" }
 
 # Mode
 mode_normal = { bg = "blue", bold = true }
@@ -71,7 +71,7 @@ progress_error  = { fg = "red", bg = "black" }
 permissions_t = { fg = "green" }
 permissions_r = { fg = "yellow" }
 permissions_w = { fg = "red" }
-permissions_x = { fg = "cyan" }
+permissions_x = { fg = "green" }
 permissions_s = { fg = "darkgray" }
 
 # : }}}
