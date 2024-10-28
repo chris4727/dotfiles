@@ -50,6 +50,9 @@ Tabs in the terminal are generally used to contain Tmux sessions when on differe
 - *Move to lower pane* = `Alt+j` or `Alt+Down`
 - *Move to upper pane* = `Alt+k` or `Alt+Up`
 
+- *Open Lazygit in popup* = `Alt+g`
+- *Open system monitor in popup* = `Alt+t`
+
 ## Vim
 
 - *Leader key* = `Space`
