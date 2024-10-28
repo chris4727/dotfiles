@@ -59,7 +59,7 @@ separator_style = { fg = "black", bg = "black" }
 
 # Mode
 mode_normal = { bg = "blue", bold = true }
-mode_select = { bg = "red", bold = true }
+mode_select = { bg = "yellow", bold = true }
 mode_unset  = { bg = "red", bold = true }
 
 # Progress
