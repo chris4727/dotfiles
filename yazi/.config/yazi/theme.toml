@@ -14,7 +14,7 @@ use = ""
 # : Manager {{{
 
 [manager]
-cwd = { fg = "cyan" }
+cwd = { fg = "white" }
 
 # Hovered
 hovered         = { reversed = true }
@@ -58,7 +58,7 @@ separator_close = ""
 separator_style = { fg = "black", bg = "black" }
 
 # Mode
-mode_normal = { bg = "blue", bold = true }
+mode_normal = { bg = "lightgreen", bold = true }
 mode_select = { bg = "yellow", bold = true }
 mode_unset  = { bg = "red", bold = true }
 
