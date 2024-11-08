@@ -57,6 +57,7 @@ Tabs in the terminal are generally used to contain Tmux sessions when on differe
 
 - *Leader key* = `Space`
 - *Local leader* = `;`
+- *Show file directory* = `-`
 - *Toggle line numbers* = `Leader n`
 - *Toggle relative line numbers* = `Leader r`
 - *Source config* = `Leader c`

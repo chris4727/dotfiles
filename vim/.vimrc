@@ -203,6 +203,8 @@ call plug#begin('~/.vim/autoload')
   Plug 'vim-scripts/AutoComplPop'
   Plug 'tpope/vim-surround'
   Plug 'Raimondi/delimitMate'
+" Navigation
+  Plug 'tpope/vim-vinegar'
   Plug 'junegunn/fzf.vim'
 " Languages
   Plug 'jalvesaq/Nvim-R'
