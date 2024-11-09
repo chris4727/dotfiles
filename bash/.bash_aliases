@@ -86,9 +86,9 @@ alias fontgrep='fc-list | grep -i --color=auto'
 # ---  RIP DISKS TO FILE  -----------------------------------
 
 # Rip audio CD to flac
-alias ripcd='abcde -o flac -c $HOME/.config/abcde/abcde.conf'
+alias ripcd='abcde -o flac -c $HOME/.config/abcde/abcde.conf && eject'
 # Rip audiobook CD to voice optimized, low bitrate opus
-alias ripbook='abcde -o opus -c $HOME/.config/abcde/abcdebook.conf'
+alias ripbook='abcde -o opus -c $HOME/.config/abcde/abcdebook.conf && eject'
 
 # ---  GIT  -----------------------------------
 
