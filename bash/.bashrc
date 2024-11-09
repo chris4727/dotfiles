@@ -21,6 +21,7 @@ export DOWNLOADS="$HOME/Downloads"
 export MUSIC="$HOME/Music"
 export NOTES="$HOME/Notes"
 export PICTURES="$HOME/Pictures"
+export SCRIPTS="$HOME/.local/bin"
 export TEMPLATES="$HOME/Templates"
 export VIDEOS="$HOME/Videos"
 
