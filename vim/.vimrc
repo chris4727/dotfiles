@@ -88,8 +88,6 @@ set hlsearch
 
 " ---  LEADER  -----------------------------------
 
-  nnoremap <leader>n :set nu!<CR>     " Toggle relative line numbers
-  nnoremap <leader>r :set rnu!<CR>    " Toggle line numbers
   map <Leader>c :source $MYVIMRC<CR>  " Source vimrc
 " Add new todo above this line
 "TODO change these to `.md` aucmd
@@ -108,7 +106,7 @@ set hlsearch
 "F2: Rename
 "F3: Find (Firefox, Chrome, Win Explorer)
 "F4: Toggle line numbers:
-  nnoremap <F4> :set relativenumber! \| :set number!<CR>
+  nnoremap <F4> :NumbersOnOff<CR> \| :NumbersToggle<CR>
 "F5: Reload/compile
 "TODO Save, then run compilation script
   map <F5> :w! \| !compile <c-r>%<CR><CR>
@@ -203,6 +201,7 @@ call plug#begin('~/.vim/autoload')
   Plug 'vim-scripts/AutoComplPop'
   Plug 'tpope/vim-surround'
   Plug 'Raimondi/delimitMate'
+  Plug 'myusuf3/numbers.vim' "Smart relative line numbers
 " Navigation
   Plug 'tpope/vim-vinegar'
   Plug 'junegunn/fzf.vim'
