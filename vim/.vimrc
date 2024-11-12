@@ -194,9 +194,9 @@ call plug#begin('~/.vim/autoload')
 " TODO: Set vim signify to show diff in git bare repo.
   Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
-" Snippets
-" TODO Configure snippets
+" Completion
 "Plug 'SirVer/ultisnips'
+  Plug 'Exafunction/codeium.vim'
 " Utilities
   Plug 'vim-scripts/AutoComplPop'
   Plug 'tpope/vim-surround'
