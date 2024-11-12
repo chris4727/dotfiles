@@ -55,6 +55,13 @@ style_user = "bg:color_purple fg:color_bg0 bold"
 style_root = "bg:color_purple fg:color_bg0 bold"
 format = '[ $user]($style)'
 
+[hostname]
+ssh_only = true
+ssh_symbol = "@"
+format = '[$ssh_symbol](color_green)[$hostname ](color_purple)'
+trim_at = '.companyname.com'
+disabled = false
+
 [directory]
 style = "fg:color_purple bg:color_bg0"
 format = "[ $path ]($style)"
