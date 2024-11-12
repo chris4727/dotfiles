@@ -95,8 +95,6 @@ alias fontgrep='fc-list | grep -i --color=auto'
 
 # Rip audio CD to flac
 alias ripcd='abcde -o flac -c $HOME/.config/abcde/abcde.conf && eject'
-# Rip audiobook CD to voice optimized, low bitrate opus
-alias ripbook='abcde -o opus -c $HOME/.config/abcde/abcdebook.conf && eject'
 
 # ---  GIT  -----------------------------------
 
@@ -111,21 +109,3 @@ alias gitv='git difftool -t vimdiff -y'				# Git vimdiff
 alias gitc='git commit'								# Commit message in editor
 alias gitp='git push -u origin main'				# Git push to origin
 
-# ---  TASKWARRIOR  -----------------------------------
-
-alias t='task'				# Taskwarrior
-alias tv='vit'				# Vit TUI for taskwarrior
-alias tad='task add'		# Add new task
-alias tsu='task summary'	# Add new task
-alias tcal='task calendar'	# View task calendar
-
-# ---  YT DOWNLOAD  -----------------------------------
-
-#List available codecs
-alias ytls='yt-dlp -F'
-# Extract audio, m4a best quality
-alias yta='yt-dlp -x --audio-format m4a --audio-quality 0 --embed-thumbnail -P $HOME/Music/ytdlp'
-# Look into possible codecs. One for small and efficient, one for best. 
-# Downsample highest resolution to 1080p. 
-# Look at '--remux-video' '--sponsorblock-remove'
-#alias ytv-best='yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '
