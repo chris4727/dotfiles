@@ -51,9 +51,9 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:color_purple fg:color_bg0"
-style_root = "bg:color_purple fg:color_bg0"
-format = '[ $user ]($style)'
+style_user = "bg:color_purple fg:color_bg0 bold"
+style_root = "bg:color_purple fg:color_bg0 bold"
+format = '[ $user]($style)'
 
 [directory]
 style = "fg:color_purple bg:color_bg0"
