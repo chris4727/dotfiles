@@ -100,10 +100,10 @@ style = "color_blue"
 format = '[$symbol]($style) [$version](color_bg1)'
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R"
 style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+format = '[[  $time ](fg:color_bg3 bg:color_bg1)]($style)'
 
 [line_break]
 disabled = false
