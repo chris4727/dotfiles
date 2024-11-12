@@ -40,18 +40,14 @@ style = "bg:color_purple fg:color_bg0"
 [os.symbols]
 Windows = "󰍲"
 Ubuntu = "󰕈"
-Raspbian = "󰐿"
-Mint = "󰣭"
 Macos = "󰀵"
 Linux = "󰌽"
-Fedora = "󰣛"
 Android = ""
 Arch = "󰣇"
 EndeavourOS = "󰣇"
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
-Pop = ""
 
 [username]
 show_always = true
