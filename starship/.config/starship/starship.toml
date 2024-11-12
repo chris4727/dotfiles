@@ -76,13 +76,13 @@ truncation_symbol = "…/"
 "dotfiles" = "󰲋 "
 
 [git_branch]
-symbol = ""
-style = "bg:color_green"
-format = '[[ $symbol $branch ](fg:color_bg0 bg:color_green)]($style)'
+symbol = "󰊢"
+style = "color_green"
+format = '[ $symbol $branch]($style)'
 
 [git_status]
-style = "bg:color_green"
-format = '[[($all_status$ahead_behind )](fg:color_bg0 bg:color_green)]($style)'
+style = "color_red"
+format = '[$all_status$ahead_behind]($style)'
 
 [nodejs]
 symbol = ""
