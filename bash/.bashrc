@@ -103,30 +103,6 @@ pathappend \
 	/usr/local/bin \
 	/bin
 
-# ---  PROMPT  -----------------------------------
-
-# Define color variables
-# Surround escape codes with `\[\]` to prevent overwriting prompt
-blk='\[\e[30m\]' # Black 
-red='\[\e[31m\]' # Red
-grn='\[\e[32m\]' # Green
-yel='\[\e[33m\]' # Yellow
-blu='\[\e[34m\]' # Blue
-prp='\[\e[35m\]' # Purple
-cyn='\[\e[36m\]' # Cyan
-wht='\[\e[37m\]' # White
-def='\[\e[39m\]' # Default
-nc='\[\e[0m\]' # No Color
-#TODO add function to change hostname color depending on which host
-#TODO add function to show git branch
-#TODO add function to wrap prompt when it is long
-#TODO add function to set prompt to red `!` after error
-_ps1() {
-  export PS1="$prp\u$grn@$prp\h$grn:$prp\W$grn->$nc "
-}
-
-PROMPT_COMMAND='_ps1'
-
 # ---  BASH SHELL OPTIONS  -----------------------
 
 # shopt is for BASHOPTS, set is for SHELLOPTS
@@ -146,4 +122,23 @@ _have pandoc && . <(pandoc --bash-completion)
 #_source_if "$HOME/.config/bash/aliases.local"
 _source_if "$HOME/.bash_aliases"
 _source_if "$HOME/.bash_functions"
+
+# ---  PROMPT  -----------------------------------
+
+# Define color variables
+# Surround escape codes with `\[\]` to prevent overwriting prompt
+blk='\[\e[30m\]' # Black 
+red='\[\e[31m\]' # Red
+grn='\[\e[32m\]' # Green
+yel='\[\e[33m\]' # Yellow
+blu='\[\e[34m\]' # Blue
+prp='\[\e[35m\]' # Purple
+cyn='\[\e[36m\]' # Cyan
+wht='\[\e[37m\]' # White
+def='\[\e[39m\]' # Default
+nc='\[\e[0m\]' # No Color
+
+ps1() {
+  export PS1="$prp\u$grn@$prp\h$grn:$prp\W$grn->$nc "
+}
 
