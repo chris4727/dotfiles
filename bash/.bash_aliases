@@ -25,12 +25,20 @@ alias now='date +"%Y-%m-%d %H:%M:%S"'
 
 # ---  LIST  -----------------------------------
 
-alias ls='ls -F --color=auto --group-directories-first'
-alias la='ls -aF --color=auto --group-directories-first'
-alias ll='ls -lAhF --color=auto --group-directories-first --time-style=long-iso --ignore=lost+found'
-# Tree with colors, icons, and show git status
-alias lt='tree'
-alias lr='ls -AFR --color=auto --group-directories-first --time-style=long-iso --ignore=lost+found'
+# If eza is installed, run eza, otherwise use ls
+if command -v eza &> /dev/null; then
+  alias ls='eza --icons --group-directories-first'
+  alias la='eza -a --icons --group-directories-first'
+  alias ll='eza -lAh --icons --group-directories-first --time-style=long-iso'
+  # Tree with colors, icons, and show git status
+  alias lt='eza --tree --icons --group-directories-first'
+else
+  alias ls='ls -F --color=auto --group-directories-first'
+  alias la='ls -aF --color=auto --group-directories-first'
+  alias ll='ls -lAhF --color=auto --group-directories-first --time-style=long-iso --ignore=lost+found'
+  # Tree with colors, icons, and show git status
+  alias lt='tree'
+fi
 
 # ---  FILE HANDLING  -----------------------------------
 
