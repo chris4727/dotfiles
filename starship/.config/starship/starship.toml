@@ -63,8 +63,8 @@ trim_at = '.companyname.com'
 disabled = false
 
 [directory]
-style = "fg:color_purple bg:color_bg0"
-format = "[ $path ]($style)"
+style = "fg:color_blue bg:color_bg0"
+format = "[$path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
