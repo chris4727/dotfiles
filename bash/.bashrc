@@ -142,3 +142,12 @@ ps1() {
   export PS1="$prp\u$grn@$prp\h$grn:$prp\W$grn->$nc "
 }
 
+
+# Use starship if installed, else use bash ps1
+if [ -x "$(command -v starship)" ]; then
+  eval "$(starship init bash)"
+  export STARSHIP_CONFIG=~/.config/starship/starship.toml
+else
+  PROMPT_COMMAND='ps1'
+fi
+
