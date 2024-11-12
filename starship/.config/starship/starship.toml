@@ -91,8 +91,8 @@ format = '[$symbol]($style) [$version](color_bg1)'
 
 [python]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "color_blue"
+format = '[$symbol]($style) [$version](color_bg1)'
 
 [rlang]
 symbol = ""
