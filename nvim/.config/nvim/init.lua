@@ -25,11 +25,15 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    -- add your plugins here
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
   },
-  -- Configure any other settings here. See the documentation for more details.
+  --
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { "gruvbox" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
+-- Set colorscheme
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])
