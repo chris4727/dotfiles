@@ -68,10 +68,10 @@ truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
+"Documents" = "Documents"
+"Downloads" = "Downloads"
+"Music" = "Music"
+"Pictures" = "Pictures"
 ".config" = ".config"
 
 [git_branch]
