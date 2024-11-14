@@ -22,6 +22,8 @@ alias diff='diff -u --color'
 alias diffdir='diff -qr'
 alias todo='$EDITOR $NOTES/TODO.md'
 alias now='date +"%Y-%m-%d %H:%M:%S"'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # ---  LIST  -----------------------------------
 
