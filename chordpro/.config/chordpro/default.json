@@ -1,98 +1,24 @@
-" ==  CHORDPRO DEFAULT  =====================================
-"  Requires:
-"	- ChordPro
-"=================================================
+# ==  CHORDPRO DEFAULT  =====================================
+#  Requires:
+#	- ChordPro
+#=================================================
 
-" ==  SETTINGS  ==================================
+# ==  SETTINGS  ==================================
 
-" ---  GENERAL  ----------------------------------
+# ---  GENERAL  ----------------------------------
 
-// Starter Configuration for ChordPro.
-// 
-// This is a really relaxed JSON document, see
-// https://metacpan.org/pod/JSON::Relaxed#REALLY-RELAXED-EXTENSIONS
+settings.strict : true # Chord parsing Strict (only known chords) or relaxed (anything that looks sane)
 
-// This configuration contains the majority of settings that may
-// be of interest for beginning users.
+# settings.transcode : "" # Transcode chords. "" = no transcode.
 
-// ALL CONFIGURATION SETTINGS ARE COMMENTED OUT WITH A LEADING "# ".
-// IF YOU WANT TO CHANGE A CONFIGURATION SETTING, REMOVE THE "# " FIRST.
+# settings.decapo : false # Eliminate capo by transposing chords.
 
-// General settings, often changed by configs and command line.
+# settings.chordnames : strict # Strictness of parsing chord names.
 
-// Chords parsing strategy.
-// Strict (only known chords) or relaxed (anything that looks sane)
-settings.strict : true
+# settings.truesf : false # Substitute Unicode sharp/flats in chord names.
 
-// Titles flush: default center.
-# settings.titles : center
+# ---  METADATA  ----------------------------------
 
-// Number of columns, default: 1.
-# settings.columns : 1
-
-// Suppress empty chord lines.
-// Command line: -a (--single-space).
-# settings.suppress-empty-chords : true
-
-// Suppress blank lyrics lines.
-# settings.suppress-empty-lyrics : true
-
-// Suppress chords.
-// Command line: -l (--lyrics-only)
-# settings.lyrics-only : false
-
-// Memorize the chords from sections.
-# settings.memorize : false
-
-// Chords inline instead of above.
-// May be a string containing pretext %s posttext.
-// Defaults to "[%s]" if set to a value that does not contain "%s".
-# settings.inline-chords : false
-
-// Same, for annotations. Ignored unless inline-chords is set.
-// Must be a string containing pretext %s posttext.
-// Default is "%s".
-# settings.inline-annotations : %s
-
-// Chords under the lyrics.
-# settings.chords-under : false
-
-// Transpose chords. 0 = no transpose.
-# settings.transpose : 0
-
-// Force enharmonic when transposing (experimental).
-# settings.enharmonic-transpose : true
-
-// Transcode chords. "" = no transcode.
-# settings.transcode : ""
-
-// Eliminate capo by transposing chords.
-# settings.decapo : false
-
-// Strictness of parsing chord names.
-# settings.chordnames : strict
-
-// Allow parsing of note names in [].
-# settings.notenames : false
-
-// Always replace chords by their canonical form.
-# settings.chords-canonical : false
-
-// If false, chorus labels are used as tags.
-# settings.choruslabels : true
-
-// Substitute Unicode sharp/flats in chord names.
-// Will fallback to the ChordProSymbols font if the selected chord font
-// does not have the glyphs.
-# settings.truesf : false
-
-// Indent for wrapped lines. Actual indent is the stringwidth.
-# settings.wrapindent : x
-
-// Consider text flowed.
-# settings.flowtext : false
-
-// Metadata.
 // For these keys you can use {meta key ...} as well as {key ...}.
 // Important: "title" and "subtitle" must always be in this list.
 
