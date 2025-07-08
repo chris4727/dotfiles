@@ -7,23 +7,23 @@
 
 # ---  GENERAL  ----------------------------------
 
-settings.strict : true # Chord parsing Strict (only known chords) or relaxed (anything that looks sane)
+settings.strict : true // Chord parsing Strict (only known chords) or relaxed (anything that looks sane)
 
-# settings.transcode : "" # Transcode chords. "" = no transcode.
+# settings.transcode : "" // Transcode chords. "" = no transcode.
 
-# settings.decapo : false # Eliminate capo by transposing chords.
+# settings.decapo : false // Eliminate capo by transposing chords.
 
-# settings.chordnames : strict # Strictness of parsing chord names.
+# settings.chordnames : strict // Strictness of parsing chord names.
 
-# settings.truesf : false # Substitute Unicode sharp/flats in chord names.
+# settings.truesf : false // Substitute Unicode sharp/flats in chord names.
 
 # ---  METADATA  ----------------------------------
 
 // For these keys you can use {meta key ...} as well as {key ...}.
 // Important: "title" and "subtitle" must always be in this list.
 
-# user.name : "" # Short user name.
-# user.fullname : "" # Full user name
+# user.name : "" // Short user name.
+# user.fullname : "" // Full user name
 
 // User defined chords (placeholder).
 // This is an array of hashes, one for each chord.
@@ -39,9 +39,9 @@ settings.strict : true # Chord parsing Strict (only known chords) or relaxed (an
 // Example: Alternative for Bes chord.
 # chords: [ { name: Bes, frets: [ 1 1 3 3 3 1 ], fingers: [ 1 1 2 3 4 1 ] } ]
 
-diagrams.show : user # Show chord diagrams: all user or none. Default is all.
+diagrams.show : user // Show chord diagrams: all user or none. Default is all.
 
-diagrams.sorted : true # Sorts chord diagrams by key
+diagrams.sorted : true // Sorts chord diagrams by key
 # "false" Sorts chord diagrams by order of appearance (default)
 
 
@@ -50,66 +50,66 @@ diagrams.sorted : true # Sorts chord diagrams by key
 // PDF Properties. Arbitrary key/values may be added.
 // Note that the context for substitutions is the first song.
 
-# pdf.info.title : "%{title}" # Document title.
+# pdf.info.title : "%{title}" // Document title.
 
-pdf.info.author : "chris4727" # Name of the author.
+pdf.info.author : "chris4727" // Name of the author.
 
-# pdf.info.subject : "" # Document subject.
+# pdf.info.subject : "" // Document subject.
 
-# pdf.info.keywords : "" # Document keywords.
+# pdf.info.keywords : "" // Document keywords.
 
-pdf.papersize : letter # Output paper size a4, letter, [595,842]
+pdf.papersize : letter // Output paper size a4, letter, [595,842]
 
 
 # ---  THEME  ----------------------------------
 
-# pdf.theme.foreground : black         # Foreground colour. Usually black.
-# pdf.theme.foreground-medium : grey70 # Light foreground colour
-# pdf.theme.foreground-light : grey90  # Very light foreground colour
-# pdf.theme.background : none          # Background colour. Usually white.
+# pdf.theme.foreground : black         // Foreground colour. Usually black.
+# pdf.theme.foreground-medium : grey70 // Light foreground colour
+# pdf.theme.foreground-light : grey90  // Very light foreground colour
+# pdf.theme.background : none          // Background colour. Usually white.
 
-# pdf.front-matter : ""                          # PDF file to add as front matter.
-# pdf.back-matter : ""                           # PDF file to add as back matter.
+# pdf.front-matter : ""                          // PDF file to add as front matter.
+# pdf.back-matter : ""                           // PDF file to add as back matter.
 
-# pdf.margintop : 80                   # Page top margin, excluding headspace.
-# pdf.marginbottom : 40                # Page bottom margin, excluding footspace.
-# pdf.marginleft : 40                  # Page left margin.
-# pdf.marginright : 40                 # Page right margin.
-# pdf.headspace : 60                   # Space for page titles.
-# pdf.footspace : 20                   # Space for page footers.
-# pdf.head-first-only : false          # Heading on first page only
+# pdf.margintop : 80                   // Page top margin, excluding headspace.
+# pdf.marginbottom : 40                // Page bottom margin, excluding footspace.
+# pdf.marginleft : 40                  // Page left margin.
+# pdf.marginright : 40                 // Page right margin.
+# pdf.headspace : 60                   // Space for page titles.
+# pdf.footspace : 20                   // Space for page footers.
+# pdf.head-first-only : false          // Heading on first page only
 
 ### Baseline distances as a factor of the font size.
 
-# pdf.spacing.title : 1.2              # Spacing for page titles.
-# pdf.spacing.lyrics : 1.2             # Spacing for lyrics.
-# pdf.spacing.chords : 1.2             # Spacing for chord names.
-# pdf.spacing.diagramchords : 1.2      # Spacing for diagram chords.
-# pdf.spacing.grid : 1.2               # Spacing for grid lines.
-# pdf.spacing.tab : 1                  # Spacing for tab lines.
-# pdf.spacing.toc : 1.4                # Spacing for table of contents lines.
+# pdf.spacing.title : 1.2              // Spacing for page titles.
+# pdf.spacing.lyrics : 1.2             // Spacing for lyrics.
+# pdf.spacing.chords : 1.2             // Spacing for chord names.
+# pdf.spacing.diagramchords : 1.2      // Spacing for diagram chords.
+# pdf.spacing.grid : 1.2               // Spacing for grid lines.
+# pdf.spacing.tab : 1                  // Spacing for tab lines.
+# pdf.spacing.toc : 1.4                // Spacing for table of contents lines.
 
 ### Appearance of chorus.
 
-# pdf.chorus.indent : 0                # Indent of the chorus, not including bar.
+# pdf.chorus.indent : 0                // Indent of the chorus, not including bar.
 
 ### Appearance of side bar.
 
-# pdf.chorus.bar.offset : 8            # Bar offset to the left of the text. Suppress when zero.
-# pdf.chorus.bar.width : 1             # Bar width. Suppress when zero.
-# pdf.chorus.bar.color : foreground    # Bar colour.
-# pdf.chorus.tag : Chorus              # Label for Chorus.
+# pdf.chorus.bar.offset : 8            // Bar offset to the left of the text. Suppress when zero.
+# pdf.chorus.bar.width : 1             // Bar width. Suppress when zero.
+# pdf.chorus.bar.color : foreground    // Bar colour.
+# pdf.chorus.tag : Chorus              // Label for Chorus.
 
 ### Appearance of chorus recall.
 
-# pdf.chorus.recall.choruslike : false # Quote the chorus like a chorus.
-# pdf.chorus.recall.tag : Chorus       # Label for recalled chorus.
-# pdf.chorus.recall.type : comment     # Font for tag text.
+# pdf.chorus.recall.choruslike : false // Quote the chorus like a chorus.
+# pdf.chorus.recall.tag : Chorus       // Label for recalled chorus.
+# pdf.chorus.recall.type : comment     // Font for tag text.
 
 ### Margin labels.
 
 ## Alternatively, render labels as comments.
-# pdf.labels.comment : "" # Values are "comment", "comment_italic" and "comment_box".
+# pdf.labels.comment : "" // Values are "comment", "comment_italic" and "comment_box".
 
 ### Appearance of chord diagrams for string instruments.
 
@@ -120,18 +120,18 @@ pdf.papersize : letter # Output paper size a4, letter, [595,842]
 ## be 4 or larger to accommodate most chords.
 ## The horizontal distance between diagrams is "hspace" cells.
 ## The vertical distance is "vspace" cells.
-pdf.diagrams.show : bottom # "top", "bottom" or "right" side of the first page, or "below" the last song line.
-pdf.diagrams.align : left # "left" (default), "right", "center" and "spread".
-# pdf.diagrams.width : 6                         # Width of each diagram cell.
-# pdf.diagrams.height : 6                        # Height of each diagram cell.
-# pdf.diagrams.vcells : 4                        # The number of frets shown.
-# pdf.diagrams.linewidth : 0.1                   # Thickness of the diagram lines as a fraction of 'width'.
-# pdf.diagrams.nutwidth : 5                      # Thickness of the top nut, in 'linewidth'.
-# pdf.diagrams.hspace : 3.95                     # Horizontal space between diagrams.
-# pdf.diagrams.vspace : 3                        # Vertical space between diagrams.
-# pdf.diagrams.dotsize : 0.8                     # Size of the fret dot, fraction of cell width.
-# pdf.diagrams.barwidth : 0.8                    # Thickness of bars, fraction of dot width.
-# pdf.diagrams.fingers : true                    # Show finger settings, if available.
+pdf.diagrams.show : bottom // "top", "bottom" or "right" side of the first page, or "below" the last song line.
+pdf.diagrams.align : left  // "left" (default), "right", "center" and "spread".
+# pdf.diagrams.width : 6                         // Width of each diagram cell.
+# pdf.diagrams.height : 6                        // Height of each diagram cell.
+# pdf.diagrams.vcells : 4                        // The number of frets shown.
+# pdf.diagrams.linewidth : 0.1                   // Thickness of the diagram lines as a fraction of 'width'.
+# pdf.diagrams.nutwidth : 5                      // Thickness of the top nut, in 'linewidth'.
+# pdf.diagrams.hspace : 3.95                     // Horizontal space between diagrams.
+# pdf.diagrams.vspace : 3                        // Vertical space between diagrams.
+# pdf.diagrams.dotsize : 0.8                     // Size of the fret dot, fraction of cell width.
+# pdf.diagrams.barwidth : 0.8                    // Thickness of bars, fraction of dot width.
+# pdf.diagrams.fingers : true                    // Show finger settings, if available.
 
 ### Appearance of chord diagrams for keyboards.
 
@@ -144,27 +144,27 @@ pdf.diagrams.align : left # "left" (default), "right", "center" and "spread".
 ## or "below" the last song line.
 
 pdf.kbdiagrams.show : bottom
-pdf.kbdiagrams.align : left                      # "left" (default), "right", "center" and "spread".
+pdf.kbdiagrams.align : left                      // "left" (default), "right", "center" and "spread".
 
-# pdf.kbdiagrams.width : 4                       # Width of a single (white) key.
-# pdf.kbdiagrams.height : 20                     # Height of the diagram.
-# pdf.kbdiagrams.keys : 14                       # The number of white keys shown.
-# pdf.kbdiagrams.base : C                        # The leftmost white key. Must be "C" or "F".
-# pdf.kbdiagrams.linewidth : 0.1                 # Thickness of the diagram lines as a fraction of "width".
-# pdf.kbdiagrams.pressed : foreground-medium     # Color of the 'pressed' keys.
-# pdf.kbdiagrams.hspace : 3.95                   # Horizontal space between diagrams.
-# pdf.kbdiagrams.vspace : 0.3                    # Vertical space between diagrams.
+# pdf.kbdiagrams.width : 4                       // Width of a single (white) key.
+# pdf.kbdiagrams.height : 20                     // Height of the diagram.
+# pdf.kbdiagrams.keys : 14                       // The number of white keys shown.
+# pdf.kbdiagrams.base : C                        // The leftmost white key. Must be "C" or "F".
+# pdf.kbdiagrams.linewidth : 0.1                 // Thickness of the diagram lines as a fraction of "width".
+# pdf.kbdiagrams.pressed : foreground-medium     // Color of the 'pressed' keys.
+# pdf.kbdiagrams.hspace : 3.95                   // Horizontal space between diagrams.
+# pdf.kbdiagrams.vspace : 0.3                    // Vertical space between diagrams.
 
 ### Grid section lines.
 
-# pdf.grids.cellbar.width : 0                    # Width of the cell bar.
+# pdf.grids.cellbar.width : 0                    // Width of the cell bar.
 # pdf.grids.cellbar.color : foreground-medium
 # pdf.grids.show : true
 pdf.grids.symbols.color : foreground
-pdf.grids.volta.color : foreground # Colour of the volta.
+pdf.grids.volta.color : foreground // Colour of the volta.
 
-# pdf.even-odd-pages : 1                         # Even/odd pages (1), odd/even (-1) or odd (0).
-# pdf.pagealign-songs : 1                        # Align songs to even/odd pages. When greater than 1, force alignment.
+# pdf.even-odd-pages : 1                         // Even/odd pages (1), odd/even (-1) or odd (0).
+# pdf.pagealign-songs : 1                        // Align songs to even/odd pages. When greater than 1, force alignment.
 
 ### How to reorder pages.
 
@@ -214,49 +214,49 @@ pdf.grids.volta.color : foreground # Colour of the volta.
 ## the next page (if it exists) for right pages.
 ## For even/odd printing, the order is reversed.
 
-# pdf.formats.default.title : [ "" "" "" ]       # Three-part title format specification, left, center, right.
-# pdf.formats.default.subtitle : [ "" "" "" ]    # Three-part title format specification, left, center, right.
-# pdf.formats.default.footer : [ "%{title}" "" "%{page}" ] # Three-part title format specification, left, center, right.
-# pdf.formats.default.background : ""            # Background page.
+# pdf.formats.default.title : [ "" "" "" ]       // Three-part title format specification, left, center, right.
+# pdf.formats.default.subtitle : [ "" "" "" ]    // Three-part title format specification, left, center, right.
+# pdf.formats.default.footer : [ "%{title}" "" "%{page}" ] // Three-part title format specification, left, center, right.
+# pdf.formats.default.background : ""            // Background page.
 ## The first page of a song has:
-# pdf.formats.title.title : [ "" "%{title}" "" ] # Three-part title format specification, left, center, right.
-# pdf.formats.title.subtitle : [ "" "%{subtitle}" "" ] # Three-part title format specification, left, center, right.
-# pdf.formats.title.footer : [ "" "" "%{page}" ] # Three-part title format specification, left, center, right.
-# pdf.formats.title.background : ""              # Background page.
+pdf.formats.title.title : [ "%{key}" "%{title}" "" ] // Three-part title format specification, left, center, right.
+pdf.formats.title.subtitle : [ "%{capo}" "%{subtitle}" "%{artist}" ] // Three-part title format specification, left, center, right.
+# pdf.formats.title.footer : [ "" "" "%{page}" ] // Three-part title format specification, left, center, right.
+# pdf.formats.title.background : ""              // Background page.
 ## The very first output page is slightly different:
-# pdf.formats.first.footer : [ "" "" "" ]        # Three-part title format specification, left, center, right.
+# pdf.formats.first.footer : [ "" "" "" ]        // Three-part title format specification, left, center, right.
 ## Background page
 # pdf.formats.first.background : ""
-# pdf.formats.filler.title : [ "" "" "" ]        # Three-part title format specification, left, center, right.
-# pdf.formats.filler.subtitle : [ "" "" "" ]     # Three-part title format specification, left, center, right.
-# pdf.formats.filler.footer : [ "" "" "" ]       # Three-part title format specification, left, center, right.
-# pdf.formats.filler.background : ""             # Background page.
+# pdf.formats.filler.title : [ "" "" "" ]        // Three-part title format specification, left, center, right.
+# pdf.formats.filler.subtitle : [ "" "" "" ]     // Three-part title format specification, left, center, right.
+# pdf.formats.filler.footer : [ "" "" "" ]       // Three-part title format specification, left, center, right.
+# pdf.formats.filler.background : ""             // Background page.
 
-// Split marker for syllables that are smaller than chord width.
-// split-marker is a 3-part array: "start", "repeat", and "final".
-// "final" is always printed, last.
-// "start" is printed if there is enough room.
-// "repeat" is printed repeatedly to fill the rest.
-// If split-marker is a single string, this is "start".
-// All elements may be left empty strings.
+## Split marker for syllables that are smaller than chord width.
+## split-marker is a 3-part array: "start", "repeat", and "final".
+## "final" is always printed, last.
+## "start" is printed if there is enough room.
+## "repeat" is printed repeatedly to fill the rest.
+## If split-marker is a single string, this is "start".
+## All elements may be left empty strings.
 # pdf.split-marker : [ "" "" "" ]
 
-// Font families and properties.
-// "fontconfig" maps members of font families to physical fonts.
-// Optionally, additional properties of the fonts can be specified.
-// Physical fonts can be the names of TrueType/OpenType fonts,
-// or names of built-in fonts (corefonts).
-// Relative filenames are looked up in the fontdir.
-// For example:
-// "fontdir" : [ "/usr/share/fonts/liberation", "/home/me/fonts" ]
+## Font families and properties.
+## "fontconfig" maps members of font families to physical fonts.
+## Optionally, additional properties of the fonts can be specified.
+## Physical fonts can be the names of TrueType/OpenType fonts,
+## or names of built-in fonts (corefonts).
+## Relative filenames are looked up in the fontdir.
+## For example:
+## "fontdir" : [ "/usr/share/fonts/liberation", "/home/me/fonts" ]
 # pdf.fontdir : []
 
-// Remap corefonts to better fonts. null = if possible.
+## Remap corefonts to better fonts. null = if possible.
 # pdf.corefonts.remap         : null
 
-// IMPORTANT: THE ENTRY WITH THE TRAILING . DENOTES THE REGULAR FONT.
+## IMPORTANT: THE ENTRY WITH THE TRAILING . DENOTES THE REGULAR FONT.
 
-// The font families.
+## The font families.
 # pdf.fontconfig.serif.           : Times-Roman
 # pdf.fontconfig.serif.bold       : Times-Bold
 # pdf.fontconfig.serif.italic     : Times-Italic
@@ -279,99 +279,52 @@ pdf.grids.volta.color : foreground # Colour of the volta.
 
 # pdf.fontconfig.sans-serif.           : Helvetica
 # pdf.fontconfig.sans-serif.bold       : Helvetica-Bold
-# pdf.fontconfig.sans-serif.italic     : Helvetica-Oblique
-# pdf.fontconfig.sans-serif.bolditalic : Helvetica-BoldOblique
+## pdf.fontconfig.sans-serif.italic     : Helvetica-Oblique
+## pdf.fontconfig.sans-serif.bolditalic : Helvetica-BoldOblique
 
-# pdf.fontconfig.courier.           : Courier
-# pdf.fontconfig.courier.bold       : Courier-Bold
-# pdf.fontconfig.courier.italic     : Courier-Oblique
-# pdf.fontconfig.courier.bolditalic : Courier-BoldOblique
+## pdf.fontconfig.courier.           : Courier
+## pdf.fontconfig.courier.bold       : Courier-Bold
+## pdf.fontconfig.courier.italic     : Courier-Oblique
+## pdf.fontconfig.courier.bolditalic : Courier-BoldOblique
 
-# pdf.fontconfig.mono.           : Courier
-# pdf.fontconfig.mono.bold       : Courier-Bold
-# pdf.fontconfig.mono.italic     : Courier-Oblique
-# pdf.fontconfig.mono.bolditalic : Courier-BoldOblique
+## pdf.fontconfig.mono.           : Courier
+## pdf.fontconfig.mono.bold       : Courier-Bold
+## pdf.fontconfig.mono.italic     : Courier-Oblique
+## pdf.fontconfig.mono.bolditalic : Courier-BoldOblique
 
-# pdf.fontconfig.monospace.           : Courier
-# pdf.fontconfig.monospace.bold       : Courier-Bold
-# pdf.fontconfig.monospace.italic     : Courier-Oblique
-# pdf.fontconfig.monospace.bolditalic : Courier-BoldOblique
+## pdf.fontconfig.monospace.           : Courier
+## pdf.fontconfig.monospace.bold       : Courier-Bold
+## pdf.fontconfig.monospace.italic     : Courier-Oblique
+## pdf.fontconfig.monospace.bolditalic : Courier-BoldOblique
 
-// "fonts" maps output elements to fonts as defined in "fontconfig".
-// The elements can have a background colour associated.
-// Colours are "#RRGGBB" or predefined names like "black", "white",
-// and lots of others.
-// NOTE: In the built-in config we use only "name" since that can
-// be overruled with user settings.
-// 
-// Some element mappings can be specified, but need not since
-// they default to other elements.
-// subtitle       --> text
-// chorus         --> text
-// comment        --> text
-// comment_italic --> chord
-// comment_box    --> chord
-// annotation     --> chord
-// toc            --> text
-// grid           --> chord
-// grid_margin    --> comment
-// footer         --> subtitle @ 60%
-// empty          --> text
-// diagram        --> comment
-// diagram_base   --> text (but at a small size)
+# pdf.fonts.title : "serif bold 14"   // Font for typesetting titles.
+# pdf.fonts.text : "serif 12"         // ## Font for typesetting lyric
+# pdf.fonts.chord : "sans italic 10"  // Font for typesetting chord names.
 
-// Font for typesetting titles.
-# pdf.fonts.title : "serif bold 14"
-
-// Font for typesetting lyrics.
-# pdf.fonts.text : "serif 12"
-
-// Font for typesetting chord names.
-# pdf.fonts.chord : "sans italic 10"
-
-// Colour specification.
+## Colour specification.
 # pdf.fonts.chordfingers.numbercolor : background
 
-// Font for typesetting comment text.
+## Font for typesetting comment text.
 # pdf.fonts.comment.name       : Sans
 # pdf.fonts.comment.size       : 12
 # pdf.fonts.comment.background : foreground-light
 
-// Font for typesetting italised comment text.
-# pdf.fonts.comment_italic : "Helvetica-Oblique 12"
+## Font for typesetting italised comment text.
+#pdf.fonts.comment_italic : "Helvetica-Oblique 12"
 
-// Font for typesetting boxed comment text.
+## Font for typesetting boxed comment text.
 # pdf.fonts.comment_box.name  : Sans
 # pdf.fonts.comment_box.size  : 12
 # pdf.fonts.comment_box.frame : 1
 
-// Font for typesetting tabs.
-# pdf.fonts.tab : "mono 10"
+# pdf.fonts.tab : "mono 10" // Font for typesetting tabs.
 
-// Font for typesetting the table of contents.
-# pdf.fonts.toc : "serif 11"
+# pdf.fonts.toc : "serif 11" // // Font for typesetting the ble of contents.
 
-// Font for typesetting grids.
-# pdf.fonts.grid : "sans 10"
+# pdf.fonts.grid : "sans 10" // // Font for typesetting grid
 
-// Settings for A2Crd (input) frontend.
-
-// Treat leading lyrics lines as title/subtitle lines.
-# a2crd.infer-titles : true
-
-// Analysis strategy.
-# a2crd.classifier : pct_chords
-
-// Tab stop width for tab expansion. Set to zero to disable.
-# a2crd.tabstop : 8
-
-// Settings for the parser/preprocessor.
-// For selected lines, you can specify a series of 
-// { "target" : "xxx", "replace" : "yyy" }
-// Every occurrence of "xxx" will be replaced by "yyy".
-// Use "pattern" instead of "target" for regular expression replacement.
-// Use wisely.
-# parser.preprocess.all       : []
-# parser.preprocess.directive : []
-# parser.preprocess.songline  : []
+## Settings for A2Crd (input) frontend.
+# a2crd.infer-titles : true // Treat leading lyrics liness title/subtitle lines.
+# a2crd.classifier : pct_chords // Analysis strategy.
+# a2crd.tabstop : 8 // Tab stop width for tab expansion. Set to zero to disable.
 
