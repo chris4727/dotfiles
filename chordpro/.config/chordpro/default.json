@@ -22,31 +22,8 @@ settings.strict : true # Chord parsing Strict (only known chords) or relaxed (an
 // For these keys you can use {meta key ...} as well as {key ...}.
 // Important: "title" and "subtitle" must always be in this list.
 
-// Append to known metadata items. Note that the first item must be
-// "append" or it will overwrite instead of append...
-# metadata.keys : [ append youtube spotify ]
-
-// If strict, only the known keys are allowed.
-// Otherwise, {meta ...} will accept any key.
-# metadata.strict : true
-
-// The separator is used to concatenate multiple values.
-// If autosplit is true, the separator is also used to split
-// values upon input.
-# metadata.separator : "; "
-
-// Split data on separator.
-# metadata.autosplit : true
-
-// Date formats. Format is a strftime template.
-# dates.today.format : "%A, %B %e, %Y"
-
-// Short user name.
-# user.name : ""
-
-// Full user name
-# user.fullname : ""
-
+# user.name : "" # Short user name.
+# user.fullname : "" # Full user name
 
 // User defined chords (placeholder).
 // This is an array of hashes, one for each chord.
@@ -62,52 +39,29 @@ settings.strict : true # Chord parsing Strict (only known chords) or relaxed (an
 // Example: Alternative for Bes chord.
 # chords: [ { name: Bes, frets: [ 1 1 3 3 3 1 ], fingers: [ 1 1 2 3 4 1 ] } ]
 
-// Format to show chord names. May contain markup
+diagrams.show : user # Show chord diagrams: all user or none. Default is all.
 
-// Format string for rendering common chord names.
-# chord-formats.common : "%{root|%{}%{qual|%{}}%{ext|%{}}%{bass|/%{}}|%{name}}"
+diagrams.sorted : true # Sorts chord diagrams by key
+# "false" Sorts chord diagrams by order of appearance (default)
 
-// Format string for rendering roman chord names.
-# chord-formats.roman : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
 
-// Format string for rendering nashville chord names.
-# chord-formats.nashville : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
-
-// Shows selected or all chord diagrams at end.
-
-// "all": shows all chords
-// "user": shows user defined chords only
-// "none": suppresses chords from being printed
-# diagrams.show : all
-
-// Sorts the diagrams by key. Default is order of appearance.
-# diagrams.sorted : false
-
-// Chords (names) that will not generate diagrams, e.g. if they
-// are considered trivial.
-# diagrams.suppress : [ C F G A E Am ]
-
-// Settings for PDF output.
+# ---  PDF OUTPUT  ----------------------------------
 
 // PDF Properties. Arbitrary key/values may be added.
 // Note that the context for substitutions is the first song.
 
-// Document title.
-# pdf.info.title : "%{title}"
+# pdf.info.title : "%{title}" # Document title.
 
-// Name of the author.
-# pdf.info.author : ""
+pdf.info.author : "chris4727" # Name of the author.
 
-// Document subject.
-# pdf.info.subject : ""
+# pdf.info.subject : "" # Document subject.
 
-// Document keywords.
-# pdf.info.keywords : ""
+# pdf.info.keywords : "" # Document keywords.
 
-// Output paper size, e.g. "a4" or [595,842].
-# pdf.papersize : a4
+pdf.papersize : letter # Output paper size a4, letter, [595,842]
 
-// Theme
+
+# ---  THEME  ----------------------------------
 
 // Foreground colour. Usually black.
 # pdf.theme.foreground : black
