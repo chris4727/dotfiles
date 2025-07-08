@@ -1,3 +1,12 @@
+" ==  CHORDPRO DEFAULT  =====================================
+"  Requires:
+"	- ChordPro
+"=================================================
+
+" ==  SETTINGS  ==================================
+
+" ---  GENERAL  ----------------------------------
+
 // Starter Configuration for ChordPro.
 // 
 // This is a really relaxed JSON document, see
