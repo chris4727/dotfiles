@@ -239,6 +239,13 @@ let g:goyo_width = 70
 "let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 """ TODO Set vim and zettlr to share snippet directory if possible?
 
+"" ---  CODEIUM  ---------------------------------
+
+let g:codeium_filetypes = {
+    \ "markdown": v:false,
+    \ "pandoc": v:false,
+    \ }
+
 " ---  FZF  --------------------------------------
 map <C-f> <Esc><Esc>:Files!<CR>			"FZF in directory
 inoremap <C-f> <Esc><Esc>:BLines!<CR>	"FZF in document
