@@ -41,8 +41,8 @@ settings.strict : true // Chord parsing Strict (only known chords) or relaxed (a
 
 diagrams.show : user // Show chord diagrams: all user or none. Default is all.
 
-diagrams.sorted : true // Sorts chord diagrams by key
-# "false" Sorts chord diagrams by order of appearance (default)
+diagrams.sorted : false // "false" Sorts chord diagrams by order of appearance (default)
+# Sorts chord diagrams by key
 
 
 # ---  PDF OUTPUT  ----------------------------------
