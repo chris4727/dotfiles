@@ -16,7 +16,9 @@ $character
 
 continuation_prompt = '[ ∙ ](color_blue)'
 
-palette = 'gruvbox_dark'
+#palette = 'gruvbox_dark'
+#palette = "rose-pine-dawn"
+palette = "rose-pine"
 
 [palettes.gruvbox_dark]
 color_fg0 = '#fbf1c7'
@@ -30,6 +32,31 @@ color_orange = '#d65d0e'
 color_purple = '#b16286'
 color_red = '#cc241d'
 color_yellow = '#d79921'
+
+
+[palettes.rose-pine-dawn]
+color_fg0 = '#575279'
+color_bg0 = '#faf4ed'
+color_bg1 = '#f2e9e1'
+color_bg3 = '#9893a5'
+color_red = '#b4637a'
+color_yellow = '#ea9d34'
+color_aqua = '#d7827e'
+color_blue = '#286983'
+color_green = '#56949f'
+color_purple = '#907aa9'
+
+[palettes.rose-pine]
+color_fg0 = '#e0def4'
+color_bg0 = '#191724'
+color_bg1 = '#1f1d2e'
+color_bg3 = '#26233a'
+color_red = '#eb6f92'
+color_yellow = '#f6c177'
+color_aqua = '#ebbcba'
+color_blue = '#31748f'
+color_green = '#9ccfd8'
+color_purple = '#c4a7e7'
 
 [os]
 disabled = false
