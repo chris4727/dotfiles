@@ -143,7 +143,7 @@ settings.strict : true
 // "all": shows all chords
 // "user": shows user defined chords only
 // "none": suppresses chords from being printed
-# diagrams.show : all
+diagrams.show : all
 
 // Sorts the diagrams by key. Default is order of appearance.
 # diagrams.sorted : false
@@ -170,7 +170,7 @@ settings.strict : true
 # pdf.info.keywords : ""
 
 // Output paper size, e.g. "a4" or [595,842].
-# pdf.papersize : a4
+pdf.papersize : letter
 
 // Theme
 
@@ -261,7 +261,7 @@ settings.strict : true
 // Appearance of chorus recall.
 
 // Quote the chorus like a chorus.
-# pdf.chorus.recall.choruslike : false
+pdf.chorus.recall.choruslike : true
 
 // Label for recalled chorus.
 # pdf.chorus.recall.tag : Chorus
@@ -397,7 +397,7 @@ settings.strict : true
 # pdf.grids.show : true
 
 // Colour of special symbols.
-# pdf.grids.symbols.color : blue
+pdf.grids.symbols.color : foreground
 
 // Properties of the volta.
 
@@ -405,7 +405,7 @@ settings.strict : true
 # pdf.grids.volta.span : 0.7
 
 // Colour of the volta.
-# pdf.grids.volta.color : blue
+# pdf.grids.volta.color : foreground
 
 // Even/odd pages (1), odd/even (-1) or odd (0).
 # pdf.even-odd-pages : 1
@@ -481,10 +481,10 @@ settings.strict : true
 // The first page of a song has:
 
 // Three-part title format specification, left, center, right.
-# pdf.formats.title.title : [ "" "%{title}" "" ]
+pdf.formats.title.title : [ "Key: %{key}" "%{title}" "" ]
 
 // Three-part title format specification, left, center, right.
-# pdf.formats.title.subtitle : [ "" "%{subtitle}" "" ]
+pdf.formats.title.subtitle : [ "Capo: %{capo}" "%{artist}" "" ]
 
 // Three-part title format specification, left, center, right.
 # pdf.formats.title.footer : [ "" "" "%{page}" ]
