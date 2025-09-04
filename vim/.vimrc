@@ -184,6 +184,7 @@ call plug#begin('~/.vim/autoload')
 
 " Visual
   Plug 'morhetz/gruvbox'
+  Plug 'rose-pine/vim'
   Plug 'ap/vim-css-color'
   Plug 'junegunn/goyo.vim'
 " Documents
@@ -209,8 +210,8 @@ call plug#begin('~/.vim/autoload')
   Plug 'jalvesaq/Nvim-R'
   Plug 'gaalcaras/ncm-R'
   Plug 'tbastos/vim-lua'
-  Plug 'kmonad/kmonad-vim'
-  Plug 'Fymyte/rasi.vim'
+  "Plug 'kmonad/kmonad-vim'
+  "Plug 'Fymyte/rasi.vim'
 " TODO: Add/configure the following plugins 
 "Plug 'will133/vim-dirdiff'
 "Plug 'AndrewRadev/linediff.vim'
@@ -239,6 +240,13 @@ let g:goyo_width = 70
 "let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 """ TODO Set vim and zettlr to share snippet directory if possible?
 
+"" ---  CODEIUM  ---------------------------------
+
+let g:codeium_filetypes = {
+    \ "markdown": v:false,
+    \ "pandoc": v:false,
+    \ }
+
 " ---  FZF  --------------------------------------
 map <C-f> <Esc><Esc>:Files!<CR>			"FZF in directory
 inoremap <C-f> <Esc><Esc>:BLines!<CR>	"FZF in document
@@ -246,11 +254,23 @@ map <C-g> <Esc><Esc>:BCommits!<CR>		"FZF git commits
 "inoremap <C-g> <Esc><Esc>:Snippets!<CR>		"FZF snippets
 
 " ==  COLORSCHEME  ===============================
-set termguicolors
+
+" ---  GRUVBOX  ----------------------------------
+
+"set termguicolors
+"let g:disable_bg = 1
+"let g:gruvbox_contrast_dark = 'medium'
+"set background=dark
+"colorscheme gruvbox
+
+" ---  ROSEPINE  ---------------------------------
+
+"set background=light
+"colorscheme rosepine_dawn
 let g:disable_bg = 1
-let g:gruvbox_contrast_dark = 'medium'
+let g:disable_float_bg = 1
 set background=dark
-colorscheme gruvbox
+colorscheme rosepine
 
 "" Specific colorscheme settings (must come after setting your colorscheme).
 "if (g:colors_name == 'gruvbox')
