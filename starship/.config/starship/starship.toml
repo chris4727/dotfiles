@@ -82,14 +82,14 @@ style_root = "color_purple"
 format = '[ $user]($style)'
 
 [hostname]
-ssh_only = true
+ssh_only = false
 ssh_symbol = "@"
-format = '[$ssh_symbol](color_green)[$hostname ](color_purple)'
+format = '[@](color_green)[$hostname ](color_purple)'
 trim_at = '.companyname.com'
 disabled = false
 
 [directory]
-style = "fg:color_blue bg:color_bg0"
+style = "fg:color_aqua bg:color_bg0"
 format = "[$path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
