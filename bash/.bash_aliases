@@ -111,3 +111,7 @@ alias gitv='git difftool -t vimdiff -y'				# Git vimdiff
 alias gitc='git commit'								# Commit message in editor
 alias gitp='git push -u origin main'				# Git push to origin
 
+# ---  DOCKER  -----------------------------------
+
+alias ldoc='lazydocker'									# Docker helper
+
