@@ -25,6 +25,13 @@ alias now='date +"%Y-%m-%d %H:%M:%S"'
 alias copy='xclip -selection clipboard'
 alias paste='xclip -selection clipboard -o'
 
+# ---  NAVIGATION  -------------------------------
+
+alias cddot='cd /$DOTFILES && ll'
+alias cdbin='cd /$SCRIPTS && ll'
+alias cdmed='cd /$MEDIA && ll'
+alias cdjelly='cd /$JELLYFIN && ll'
+
 # ---  LIST  -----------------------------------
 
 # If eza is installed, run eza, otherwise use ls
