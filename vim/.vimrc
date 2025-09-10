@@ -189,8 +189,9 @@ call plug#begin('~/.vim/autoload')
   Plug 'junegunn/goyo.vim'
 " Documents
 " Plug 'lervag/vimtex'
-  Plug 'vim-pandoc/vim-pandoc'
-  Plug 'rwxrob/vim-pandoc-syntax-simple'
+""  Plug 'vim-pandoc/vim-pandoc'
+""  Plug 'rwxrob/vim-pandoc-syntax-simple'
+  Plug 'vimwiki/vimwiki'
 " Version control
 " TODO: Set vim signify to show diff in git bare repo.
   Plug 'mhinz/vim-signify'
@@ -227,6 +228,9 @@ call plug#end()
 
 " ---  VIMTEX  -----------------------------------
 let g:vimtex_view_method = 'zathura'
+
+" ---  VIMWIKI  ----------------------------------
+
 
 " ---  GOYO  -------------------------------------
 let g:goyo_width = 70
