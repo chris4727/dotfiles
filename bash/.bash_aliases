@@ -53,7 +53,7 @@ fi
 # If bat is installed, use bat, otherwise use basic command
 if command -v bat &> /dev/null; then
   alias cat='bat -p $@'
-  alias lsblk='lsblk | bat -p'
+  alias lsblk='lsblk | bat -pl conf'
 fi
 
 # ---  FILE HANDLING  -----------------------------------
