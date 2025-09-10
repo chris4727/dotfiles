@@ -48,6 +48,14 @@ else
   alias lt='tree'
 fi
 
+# ---  BAT  --------------------------------------
+
+# If bat is installed, use bat, otherwise use basic command
+if command -v bat &> /dev/null; then
+  alias cat='bat -p $@'
+  alias lsblk='lsblk | bat -p'
+fi
+
 # ---  FILE HANDLING  -----------------------------------
 
 alias rcp="rsync --archive --human-readable --progress --verbose"
