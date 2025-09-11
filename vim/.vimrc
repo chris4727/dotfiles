@@ -231,6 +231,8 @@ let g:vimtex_view_method = 'zathura'
 
 " ---  VIMWIKI  ----------------------------------
 
+let g:vimwiki_list = [{'path': '~/Notes/',
+                      \ 'syntax': 'markdown', 'ext': 'md'}]
 
 " ---  GOYO  -------------------------------------
 let g:goyo_width = 70
