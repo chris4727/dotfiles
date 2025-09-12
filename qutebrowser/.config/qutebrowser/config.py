@@ -5,10 +5,11 @@
 
 config.load_autoconfig(False)
 
+# --- PRIVACY ------------------------------------
+
 # Which cookies to accept
-config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
-# Which cookies to accept
-config.set('content.cookies.accept', 'all', 'devtools://*')
+config.set('content.cookies.accept', 'no-3rdparty', 'chrome-devtools://*')
+config.set('content.cookies.accept', 'no-3rdparty', 'devtools://*')
 # Valid values:
 #   - all: Accept all cookies.
 #   - no-3rdparty: Accept cookies from the same origin only. This is known to break some sites, such as GMail.
