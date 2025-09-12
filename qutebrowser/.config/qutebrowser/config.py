@@ -15,3 +15,10 @@ config.set('content.cookies.accept', 'all', 'devtools://*')
 #   - no-unknown-3rdparty: Accept cookies from the same origin only, unless a cookie is already set for the domain. On QtWebEngine, this is the same as no-3rdparty.
 #   - never: Don't accept cookies at all.
 
+# --- VIDEO PLAYBACK -----------------------------
+
+# Unbind default bindings
+config.unbind('v', mode='normal')
+# Pressing "v" will spawn link hints. The chosen link will open in mpv
+config.bind('v', 'hint links spawn --detach mpv {hint-url} ')
+
