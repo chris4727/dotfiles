@@ -7,14 +7,11 @@ config.load_autoconfig(False)
 
 # --- PRIVACY ------------------------------------
 
-# Which cookies to accept
-config.set('content.cookies.accept', 'no-3rdparty', 'chrome-devtools://*')
-config.set('content.cookies.accept', 'no-3rdparty', 'devtools://*')
-# Valid values:
-#   - all: Accept all cookies.
-#   - no-3rdparty: Accept cookies from the same origin only. This is known to break some sites, such as GMail.
-#   - no-unknown-3rdparty: Accept cookies from the same origin only, unless a cookie is already set for the domain. On QtWebEngine, this is the same as no-3rdparty.
-#   - never: Don't accept cookies at all.
+c.content.javascript.enabled = True
+c.content.autoplay = False
+c.content.cookies.accept = "no-3rdparty"
+c.content.geolocation = False
+c.content.notifications.enabled = False
 
 # --- NAVIGATION ---------------------------------
 
