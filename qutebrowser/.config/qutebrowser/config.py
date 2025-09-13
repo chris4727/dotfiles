@@ -2,8 +2,20 @@
 # Documentation:
 #   qute://help/configuring.html
 #   qute://help/settings.html
+#   https://qutebrowser.org/doc/help/settings.html
+
+# --- GENERAL ------------------------------------
 
 config.load_autoconfig(False)
+c.fonts.default_family = "FiraCodeNerdFont"
+c.fonts.default_size = "10.5pt"
+
+# -- TABS ----------------------------------------
+
+c.tabs.show = "always" # When to show tabs:always, multiple, switching, never
+c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
+# c.window.transparent = True # apparently not needed
+c.tabs.width = '7%'
 
 # --- PRIVACY ------------------------------------
 
