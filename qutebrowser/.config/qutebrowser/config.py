@@ -79,8 +79,12 @@ c.colors.tabs.selected.odd.fg = palette["bg0"]
 # When pressing "f" or "F"
 c.colors.hints.bg = palette["bg0"]
 c.colors.hints.fg = palette["fg0"]
+c.colors.hints.match.fg = palette["aqu"]
 c.hints.border = "1px solid" + palette["fg2"]
-# Tab Indicator (the vertical bar on left of tabs)
+c.hints.padding = {'top': 3, 'bottom': 3, 'left': 5, 'right': 5}
+c.hints.radius = 5
+# --- TAB INDICATOR  -----------------------------
+# The vertical bar on left of tabs
 c.tabs.indicator.width = 13 # 0 = no tab indicator
 c.colors.tabs.indicator.start = palette["tst"]
 c.colors.tabs.indicator.stop = palette["grn"]
