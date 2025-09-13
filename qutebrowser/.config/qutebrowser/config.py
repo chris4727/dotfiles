@@ -9,17 +9,20 @@
 config.load_autoconfig(False)
 c.fonts.default_family = "FiraCodeNerdFont"
 c.fonts.default_size = "10.5pt"
+c.auto_save.session = True # save tabs on quit/restart
+c.url.start_pages = "https://start.duckduckgo.com/" # When starting qutebrowser
+c.url.default_page = "https://start.duckduckgo.com/" # When opening a new tab without a URL
 
 # -- TABS ----------------------------------------
 
 c.tabs.show = "always" # When to show tabs:always, multiple, switching, never
 c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
 # c.window.transparent = True # apparently not needed
-c.tabs.width = '7%'
+c.tabs.width = '7%' # Size of vertical tab bar
 
 # --- PRIVACY ------------------------------------
 
-c.content.javascript.enabled = True
+c.content.javascript.enabled = True # TODO set False by default, toggle with keybind
 c.content.autoplay = False
 c.content.cookies.accept = "no-3rdparty"
 c.content.geolocation = False
@@ -29,6 +32,16 @@ c.content.notifications.enabled = False
 
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
+
+# --- SEARCH -------------------------------------
+
+c.url.searchengines = {
+# note - if you use duckduckgo, you can make use of its built in bangs, of which there are many! https://duckduckgo.com/bangs
+        'DEFAULT': 'https://duckduckgo.com/?q={}',
+        '!aw': 'https://wiki.archlinux.org/?search={}',
+        '!gh': 'https://github.com/search?o=desc&q={}&s=stars',
+        '!yt': 'https://www.youtube.com/results?search_query={}',
+        }
 
 # --- VIDEO PLAYBACK -----------------------------
 
@@ -66,6 +79,7 @@ c.colors.statusbar.url.fg = palette["fg2"]
 c.colors.statusbar.url.success.https.fg = palette["grn"]
 c.colors.statusbar.url.hover.fg = palette["yel"]
 # --- TABS ----------------------------------
+c.tabs.title.format = "{audio}{index} {current_title}"
 c.colors.tabs.even.bg = palette["bg0"]
 c.colors.tabs.even.fg = palette["fg0"]
 c.colors.tabs.odd.bg = palette["bg0"]
