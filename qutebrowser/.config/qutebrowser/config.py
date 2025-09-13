@@ -37,8 +37,8 @@ config.unbind('v', mode='normal')
 # Pressing "v" will spawn link hints. The chosen link will open in mpv
 config.bind('v', 'hint links spawn --detach mpv {hint-url} ')
 
-# --- THEME --------------------------------------
-
+# == THEME =======================================
+# Rosepine theme palette
 palette = {
             "bg0": "#191724",
             "bg1": "#1f1d2e",
@@ -54,10 +54,10 @@ palette = {
             "prp": "#c4a7e7",
             "tst": "#FF0000",
 }
-# Dark mode
+# --- DARK MODE ----------------------------------
 c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.bg = palette["bg0"]
-# Status bar
+# --- STATUS BAR ----------------------------------
 c.colors.statusbar.normal.bg = palette["bg0"]
 c.colors.statusbar.normal.fg = palette["fg2"]
 c.colors.statusbar.command.bg = palette["bg0"]
@@ -65,7 +65,7 @@ c.colors.statusbar.command.fg = palette["grn"]
 c.colors.statusbar.url.fg = palette["fg2"]
 c.colors.statusbar.url.success.https.fg = palette["grn"]
 c.colors.statusbar.url.hover.fg = palette["yel"]
-# Tabs
+# --- TABS ----------------------------------
 c.colors.tabs.even.bg = palette["bg0"]
 c.colors.tabs.even.fg = palette["fg0"]
 c.colors.tabs.odd.bg = palette["bg0"]
@@ -75,7 +75,8 @@ c.colors.tabs.selected.even.bg = palette["prp"]
 c.colors.tabs.selected.odd.bg = palette["prp"]
 c.colors.tabs.selected.even.fg = palette["bg0"]
 c.colors.tabs.selected.odd.fg = palette["bg0"]
-# Hints (when pressing "f" or "F")
+# --- HINTS --------------------------------------
+# When pressing "f" or "F"
 c.colors.hints.bg = palette["bg0"]
 c.colors.hints.fg = palette["fg0"]
 c.hints.border = "1px solid" + palette["fg2"]
@@ -83,7 +84,8 @@ c.hints.border = "1px solid" + palette["fg2"]
 c.tabs.indicator.width = 13 # 0 = no tab indicator
 c.colors.tabs.indicator.start = palette["tst"]
 c.colors.tabs.indicator.stop = palette["grn"]
-# Completion widget (when typing commands)
+# --- COMPLETION WIDGET  -------------------------
+# When typing commands
 c.colors.completion.match.fg = palette["aqu"]
 c.colors.completion.odd.bg = palette["bg0"]
 c.colors.completion.even.bg = palette["bg0"]
@@ -95,7 +97,7 @@ c.colors.completion.item.selected.fg = palette["fg0"]
 c.colors.completion.item.selected.match.fg = palette["grn"]
 c.colors.completion.item.selected.border.top = palette["bg0"]
 c.colors.completion.item.selected.border.bottom = palette["bg0"]
-# Messages
+# --- MESSAGES -----------------------------------
 c.messages.timeout = 10000
 c.colors.messages.info.bg = palette["bg0"]
 c.colors.messages.info.fg = palette["yel"]
@@ -103,8 +105,7 @@ c.colors.messages.info.border = palette["bg0"]
 c.colors.messages.error.bg = palette["bg0"]
 c.colors.messages.error.fg = palette["red"]
 c.colors.messages.error.border = palette["bg0"]
-
-# Downloads
+# --- DOWNLOADS ----------------------------------
 c.colors.downloads.bar.bg = palette["bg0"]
 c.colors.downloads.start.bg = palette["bg0"]
 c.colors.downloads.stop.bg = palette["bg0"]
@@ -112,7 +113,7 @@ c.colors.downloads.start.fg = palette["fg0"]
 c.colors.downloads.stop.fg = palette["fg0"]
 c.colors.downloads.error.bg = palette["bg0"]
 c.colors.downloads.error.fg = palette["red"]
-
+# --- PROMPTS ------------------------------------
 c.colors.prompts.bg = palette["bg1"]
 c.colors.prompts.fg = palette["fg0"]
 c.colors.prompts.selected.bg = palette["prp"]
