@@ -15,7 +15,7 @@ alias ip="curl http://myip.dnsomatic.com && echo ''"
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
-alias vi='$EDITOR'
+alias v='$EDITOR'
 alias file='$FILEMANAGER'
 alias dus='du -d 1 -h | sort -h'
 alias grep='grep --color=auto'
