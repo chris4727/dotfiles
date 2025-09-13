@@ -15,6 +15,7 @@ _have() { type "$1" &>/dev/null; }
 
 export EDITOR="vim"
 export TERM="xterm-256color"
+export FILEMANAGER="yazi"
 export DOCUMENTS="$HOME/Documents"
 export DOTFILES=$HOME/dotfiles
 export DOWNLOADS="$HOME/Downloads"
