@@ -118,11 +118,14 @@ c.colors.completion.item.selected.border.bottom = palette["bg0"]
 # --- MESSAGES -----------------------------------
 c.messages.timeout = 10000
 c.colors.messages.info.bg = palette["bg0"]
-c.colors.messages.info.fg = palette["yel"]
+c.colors.messages.info.fg = palette["fg0"]
 c.colors.messages.info.border = palette["bg0"]
 c.colors.messages.error.bg = palette["bg0"]
 c.colors.messages.error.fg = palette["red"]
 c.colors.messages.error.border = palette["bg0"]
+c.colors.messages.warning.bg = palette["bg0"]
+c.colors.messages.warning.fg = palette["yel"]
+c.colors.messages.warning.border = palette["bg0"]
 # --- DOWNLOADS ----------------------------------
 c.colors.downloads.bar.bg = palette["bg0"]
 c.colors.downloads.start.bg = palette["bg0"]
