@@ -39,6 +39,7 @@ config.bind('dd', 'tab-close')
 # External video player
 config.unbind('v', mode='normal') # Unbind default bindings
 config.bind('v', 'hint links spawn --detach mpv {hint-url} ') # Pressing "v" will spawn link hints. The chosen link will open in mpv
+config.bind('cc', 'config-source')
 
 # --- SEARCH -------------------------------------
 
