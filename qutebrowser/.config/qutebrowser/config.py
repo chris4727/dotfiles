@@ -17,8 +17,8 @@ c.url.default_page = "https://start.duckduckgo.com/" # When opening a new tab wi
 
 c.tabs.show = "always" # When to show tabs:always, multiple, switching, never
 c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
-# c.window.transparent = True # apparently not needed
-c.tabs.width = '7%' # Size of vertical tab bar
+c.tabs.width = '15%' # Size of vertical tab bar
+c.tabs.position = "top" # "top" "bottom" "left" "right" TODO Auto switch to "top" above a certain number of open tabs
 
 # --- PRIVACY ------------------------------------
 
