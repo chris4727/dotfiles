@@ -70,11 +70,17 @@ palette = {
 # --- DARK MODE ----------------------------------
 c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.bg = palette["bg0"]
-# --- STATUS BAR ----------------------------------
+# --- STATUSBAR ----------------------------------
 c.colors.statusbar.normal.bg = palette["bg0"]
 c.colors.statusbar.normal.fg = palette["fg2"]
 c.colors.statusbar.command.bg = palette["bg0"]
-c.colors.statusbar.command.fg = palette["grn"]
+c.colors.statusbar.command.fg = palette["yel"]
+c.colors.statusbar.insert.bg = palette["bg0"]
+c.colors.statusbar.insert.fg = palette["grn"]
+c.colors.statusbar.private.bg = palette["prp"]
+c.colors.statusbar.private.fg = palette["bg0"]
+c.colors.statusbar.command.private.bg = palette["prp"]
+c.colors.statusbar.command.private.fg = palette["bg0"]
 c.colors.statusbar.url.fg = palette["fg2"]
 c.colors.statusbar.url.success.https.fg = palette["grn"]
 c.colors.statusbar.url.hover.fg = palette["yel"]
