@@ -25,6 +25,7 @@ c.tabs.position = "top" # "top" "bottom" "left" "right" TODO Auto switch to "top
 c.content.javascript.enabled = True # TODO set False by default, toggle with keybind
 c.content.autoplay = False
 c.content.cookies.accept = "no-3rdparty"
+c.content.cookies.store = True
 c.content.geolocation = False
 c.content.notifications.enabled = False
 
@@ -33,6 +34,8 @@ c.content.notifications.enabled = False
 # Tab navigation
 config.bind('J', 'tab-next')
 config.bind('K', 'tab-prev')
+config.bind('tT', 'config-cycle tabs.position top left')
+config.bind('tH', 'config-cycle tabs.show multiple never')
 # Close tabs
 config.unbind('d', mode='normal') # Unbind default bindings
 config.bind('dd', 'tab-close') 
@@ -175,6 +178,7 @@ c.content.blocking.adblock.lists = [
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2022.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2023.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2024.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2025.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badware.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt",
         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badlists.txt",
