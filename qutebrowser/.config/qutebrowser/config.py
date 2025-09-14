@@ -49,6 +49,8 @@ c.url.searchengines = {
         '!aw': 'https://wiki.archlinux.org/?search={}',
         '!gh': 'https://github.com/search?o=desc&q={}&s=stars',
         '!yt': 'https://www.youtube.com/results?search_query={}',
+        '!eb': 'https://www.ebay.com/sch/i.html?_nkw={}&_sacat=0&_from=R40&_trksid=p2540003.m570.l1313',
+        '!lib': 'https://tacoma.bibliocommons.com/v2/search?query={}&searchType=smart',
         }
 
 # == THEME =======================================
