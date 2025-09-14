@@ -28,10 +28,17 @@ c.content.cookies.accept = "no-3rdparty"
 c.content.geolocation = False
 c.content.notifications.enabled = False
 
-# --- NAVIGATION ---------------------------------
+# --- KEYBINDS ---------------------------------
 
-config.bind('J', 'tab-prev')
-config.bind('K', 'tab-next')
+# Tab navigation
+config.bind('J', 'tab-next')
+config.bind('K', 'tab-prev')
+# Close tabs
+config.unbind('d', mode='normal') # Unbind default bindings
+config.bind('dd', 'tab-close') 
+# External video player
+config.unbind('v', mode='normal') # Unbind default bindings
+config.bind('v', 'hint links spawn --detach mpv {hint-url} ') # Pressing "v" will spawn link hints. The chosen link will open in mpv
 
 # --- SEARCH -------------------------------------
 
@@ -42,13 +49,6 @@ c.url.searchengines = {
         '!gh': 'https://github.com/search?o=desc&q={}&s=stars',
         '!yt': 'https://www.youtube.com/results?search_query={}',
         }
-
-# --- VIDEO PLAYBACK -----------------------------
-
-# Unbind default bindings
-config.unbind('v', mode='normal')
-# Pressing "v" will spawn link hints. The chosen link will open in mpv
-config.bind('v', 'hint links spawn --detach mpv {hint-url} ')
 
 # == THEME =======================================
 # Rosepine theme palette
