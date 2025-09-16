@@ -60,6 +60,8 @@ c.url.searchengines = {
         '!lib': 'https://tacoma.bibliocommons.com/v2/search?query={}&searchType=smart',
         '!poke': 'https://bulbapedia.bulbagarden.net/w/index.php?title=Special:Search&search={}&fulltext=1&profile=default',
         '!skyrim': 'https://en.uesp.net/w/index.php?title=Special%3ASearch&search={}&button=',
+        '!t1': 'https://1337x.to/search/{}/1/',
+        '!t2': 'https://thepiratebay.org/search.php?q={}&all=on&search=Pirate+Search&page=0&orderby=',
         #'': '',
         }
 
