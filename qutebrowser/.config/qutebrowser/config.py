@@ -12,6 +12,7 @@ c.fonts.default_size = "10.5pt"
 c.auto_save.session = True # save tabs on quit/restart
 c.url.start_pages = "https://start.duckduckgo.com/" # When starting qutebrowser
 c.url.default_page = "https://start.duckduckgo.com/" # When opening a new tab without a URL
+c.editor.command = ['kitty', '-e', 'vim', '{file}']
 
 # -- TABS ----------------------------------------
 
@@ -43,6 +44,9 @@ config.bind('dd', 'tab-close')
 config.unbind('v', mode='normal') # Unbind default bindings
 config.bind('v', 'hint links spawn --detach mpv {hint-url} ') # Pressing "v" will spawn link hints. The chosen link will open in mpv
 config.bind('cc', 'config-source')
+# Open external editor
+config.bind( 'e', 'edit-url')
+config.bind = [ '--mode', 'insert', '<Ctrl-e>', 'edit-text' ]
 
 # --- SEARCH -------------------------------------
 
