@@ -112,6 +112,15 @@ c.colors.tabs.selected.even.bg = palette["prp"]
 c.colors.tabs.selected.odd.bg = palette["prp"]
 c.colors.tabs.selected.even.fg = palette["bg0"]
 c.colors.tabs.selected.odd.fg = palette["bg0"]
+
+c.colors.tabs.pinned.even.bg = palette["bg1"]
+c.colors.tabs.pinned.even.fg = palette["fg0"]
+c.colors.tabs.pinned.odd.bg = palette["bg1"]
+c.colors.tabs.pinned.odd.fg = palette["fg0"]
+c.colors.tabs.pinned.selected.even.bg = palette["prp"]
+c.colors.tabs.pinned.selected.odd.bg = palette["prp"]
+c.colors.tabs.pinned.selected.even.fg = palette["bg0"]
+c.colors.tabs.pinned.selected.odd.fg = palette["bg0"]
 # --- HINTS --------------------------------------
 # When pressing "f" or "F"
 c.colors.hints.bg = palette["bg0"]
