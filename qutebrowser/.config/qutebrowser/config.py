@@ -43,6 +43,7 @@ config.bind('dd', 'tab-close')
 # External video player
 config.unbind('v', mode='normal') # Unbind default bindings
 config.bind('v', 'hint links spawn --detach mpv {hint-url} ') # Pressing "v" will spawn link hints. The chosen link will open in mpv
+#config.bind('<ctrl-y>', 'spawn --userscript ytdla') # TODO Run ytdla on url
 config.bind('cc', 'config-source')
 # Open external editor
 config.bind( 'e', 'edit-url')
