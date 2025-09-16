@@ -1,4 +1,10 @@
 # == LAZYGIT =====================================
+
+# --- GENERAL ------------------------------------
+
+# See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#launching-not-in-a-repository-behaviour
+notARepository: 'skip'
+
 # --- THEME --------------------------------------
 # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#color-attributes
 gui:
@@ -15,3 +21,4 @@ gui:
     # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#highlighting-the-selected-line
     selectedLineBgColor:
       - '#26233a' # bg2
+
