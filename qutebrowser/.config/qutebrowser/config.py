@@ -54,6 +54,9 @@ c.url.searchengines = {
         '!yt': 'https://www.youtube.com/results?search_query={}',
         '!eb': 'https://www.ebay.com/sch/i.html?_nkw={}&_sacat=0&_from=R40&_trksid=p2540003.m570.l1313',
         '!lib': 'https://tacoma.bibliocommons.com/v2/search?query={}&searchType=smart',
+        '!poke': 'https://bulbapedia.bulbagarden.net/w/index.php?title=Special:Search&search={}&fulltext=1&profile=default',
+        '!skyrim': 'https://en.uesp.net/w/index.php?title=Special%3ASearch&search={}&button=',
+        #'': '',
         }
 
 # == THEME =======================================
