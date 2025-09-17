@@ -156,3 +156,8 @@ else
   PROMPT_COMMAND='ps1'
 fi
 
+# Use pfetch if installed
+if [ -x "$(command -v pfetch)" ]; then
+  printf "\n\n" && pfetch
+fi
+
