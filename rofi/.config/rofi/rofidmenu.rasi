@@ -11,7 +11,7 @@ configuration {
 	combi-modes: [window, drun, calc, run ];
 }
 
-@import "~/.config/rofi/gruvbox-dark.rasi"
+@import "~/.config/rofi/themes/rosepine.rasi"
 
 window {
     background-color: @background;
