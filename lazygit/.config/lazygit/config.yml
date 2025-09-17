@@ -24,4 +24,17 @@ gui:
   authorColors:
     'chris4727': 'green'
     '*': 'magenta' # All other authors
+  spinner:
+    frames:
+      - "⠋"
+      - "⠙"
+      - "⠹"
+      - "⠸"
+      - "⠼"
+      - "⠴"
+      - "⠦"
+      - "⠧"
+      - "⠇"
+      - "⠏"
+    rate: 50
 
