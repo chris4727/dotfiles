@@ -208,6 +208,7 @@ call plug#begin('~/.vim/autoload')
   Plug 'tpope/vim-vinegar'
   Plug 'junegunn/fzf.vim'
 " Languages
+  Plug 'dense-analysis/ale'
   Plug 'jalvesaq/Nvim-R'
   Plug 'gaalcaras/ncm-R'
   Plug 'tbastos/vim-lua'
