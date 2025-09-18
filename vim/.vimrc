@@ -262,9 +262,10 @@ map <C-g> <Esc><Esc>:BCommits!<CR>		"FZF git commits
 
 " ==  COLORSCHEME  ===============================
 
+set termguicolors
+
 " ---  GRUVBOX  ----------------------------------
 
-"set termguicolors
 "let g:disable_bg = 1
 "let g:gruvbox_contrast_dark = 'medium'
 "set background=dark
