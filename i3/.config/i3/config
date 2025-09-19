@@ -197,7 +197,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Terminal
 bindsym $sup+Return exec kitty
 # Web [b]rowser
-bindsym $sup+b exec /usr/bin/firefox
+bindsym $sup+b exec /usr/bin/qutebrowser
 # [f]ile manager
 #bindsym $sup+f exec kitty -e lf
 # Screenshot with PrtScn
