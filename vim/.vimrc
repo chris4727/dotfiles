@@ -185,6 +185,7 @@ call plug#begin('~/.vim/autoload')
 " Visual
   Plug 'morhetz/gruvbox'
   Plug 'rose-pine/vim'
+  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
   Plug 'ap/vim-css-color'
   Plug 'junegunn/goyo.vim'
 " Documents
@@ -263,24 +264,24 @@ map <C-g> <Esc><Esc>:BCommits!<CR>		"FZF git commits
 " ==  COLORSCHEME  ===============================
 
 set termguicolors
+let g:disable_bg = 1
+let g:disable_float_bg = 1
 
-" ---  GRUVBOX  ----------------------------------
-
-"let g:disable_bg = 1
+" --- DARK MODE  ---------------------------------
+"
+set background=dark
 "let g:gruvbox_contrast_dark = 'medium'
-"set background=dark
 "colorscheme gruvbox
+colorscheme rosepine
+"colorscheme catppuccin_mocha
 
-" ---  ROSEPINE  ---------------------------------
+" --- LIGHT MODE  --------------------------------
 
 "set background=light
 "colorscheme rosepine_dawn
-let g:disable_bg = 1
-let g:disable_float_bg = 1
-set background=dark
-colorscheme rosepine
+"colorscheme catppuccin_latte
 
-"" Specific colorscheme settings (must come after setting your colorscheme).
+" --- COLORSCHEME SETTINGS -----------------------
 "if (g:colors_name == 'gruvbox')
 "  if (&background == 'dark')
 "    hi Visual cterm=NONE ctermfg=NONE ctermbg=237 guibg=#3a3a3a
