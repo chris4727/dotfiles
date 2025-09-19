@@ -208,6 +208,7 @@ bindsym Print exec scrot ~/Pictures/screenshots/%Y%m%d-%T-screenshot.png && noti
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id picom -b
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
 # when second to i3 a DE is installed or mixed usage of i3 + xfce4 or GNOME
