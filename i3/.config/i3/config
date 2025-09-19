@@ -226,9 +226,9 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # Set wallpaper
-exec --no-startup-id feh --bg-scale $HOME/Pictures/wallpaper.jpg
+exec --no-startup-id feh --bg-scale $HOME/.config/wallpaper/wallpaper.jpg
 # Can specify effect before path. Ex. < -w blur ~/.config>
-exec --no-startup-id betterlockscreen -w $HOME/.config/wallpaper/
+exec --no-startup-id betterlockscreen -w $HOME/.config/wallpaper/wallpaper.jpg
 
 # Lock the system
 bindsym $sup+x exec betterlockscreen -l ~/.config/wallpaper/
