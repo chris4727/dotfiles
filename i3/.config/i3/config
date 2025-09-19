@@ -14,7 +14,7 @@ exec "xrandr --dpi 267"
 font pango: FiraCode Nerd Font Regular 10
 
 # Window borders
-new_window pixel 1
+default_border pixel 0
 
 # Set inner/outer gaps
 gaps inner 10
@@ -297,41 +297,6 @@ smart_borders on
 
 # set position of floating window
 # for_window [class=".*"] move position center
-
-# color settings for bar and windows #
-#================================================
-
-# Define colors variables:
-set $bg0h			#1d2021
-set $bg0			#282828
-set $bg1			#3c3836
-set $bg2			#504945
-set $bg3			#665c54
-set $fg0			#fbf1c7
-set $fg1			#ebdbb2
-set $fg2			#d5c4a1
-set $fg3			#bdae93
-set $purpledk		#b16286
-set $purplelt		#d3869b
-set $bluedk			#458588
-set $bluelt			#83a598
-set $aquadk			#689d6a
-set $aqualt			#83c07c
-set $greendk		#98971a
-set $greenlt		#b8bb26
-set $yellowdk		#d79921
-set $yellowlt		#fabd2f
-set $orangedk		#d65d0e
-set $orangelt		#fe8019
-set $reddk			#cc241d
-set $redlt			#fb4934
-
-# define colors for windows:
-#class		        	border		bground		text		indicator	child_border
-client.focused		    $purpledk 	$bg0		$fg1		$bg1		$purplelt
-client.unfocused	    $bg2		$bg0		$fg1		$bg1		$bg2
-client.focused_inactive	$bluedk		$bg0		$fg1		$bg1		$bluelt
-client.urgent		    $orangelt	$bg0		$fg1		$bg1		$orangelt
 
 # Polybar #
 #================================================
