@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin (px from side, px from top)
-    offset = (20, 45) # 20x45
+    offset = (5, 32) # 20x45
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -70,12 +70,12 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 16
+    transparency = 20
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 2
+    separator_height = 1
 
     # Padding between text and separator.
     padding = 8
@@ -99,7 +99,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = auto
+    separator_color = "#6e6a86"
 
     # Sort messages by urgency.
     sort = yes
@@ -310,21 +310,21 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#191724"
+    background = "#26233a"
     foreground = "#e0def4"
-    timeout = 5
+    timeout = 10
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#191724"
+    background = "#26233a"
     foreground = "#e0def4"
-    timeout = 5
+    timeout = 10
     # Icon for notifications with normal urgency
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#191724"
+    background = "#26233a"
     foreground = "#e0def4"
     frame_color = "#eb6f92"
     timeout = 0
