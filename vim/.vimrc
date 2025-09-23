@@ -159,12 +159,8 @@ nnoremap k kzz
   nnoremap <leader>d :sp 
 
 set splitbelow splitright
-" Split navigation
-" Navigate around splits with vim keys
-  nnoremap <C-w>h <C-w><C-h>
-  nnoremap <C-w>j <C-w><C-j>
-  nnoremap <C-w>k <C-w><C-k>
-  nnoremap <C-w>l <C-w><C-l>
+" Switch between splits
+  nnoremap <leader>w <C-w>w
 
 " ---  AUTOCOMMANDS  -----------------------------
 
@@ -283,10 +279,10 @@ colorscheme rosepine
 "hi SpellRare cterm=bold,italic ctermfg=red guifg=red guibg=black
 "hi SpellCap cterm=bold,italic ctermfg=red guifg=red guibg=black
 " Spelling mistakes will be colored up red.
-hi SpellBad cterm=underline ctermfg=1 ctermbg=NONE guisp=#cc241d
-hi SpellCap cterm=underline ctermfg=1 ctermbg=NONE guisp=#cc241d
-hi SpellRare cterm=underline ctermfg=1 ctermbg=NONE guisp=#cc241d
-hi SpellLocal cterm=underline ctermfg=1 ctermbg=NONE guisp=#cc241d
+hi SpellBad cterm=underline ctermfg=1 ctermbg=NONE guisp=#eb6f92
+hi SpellCap cterm=underline ctermfg=1 ctermbg=NONE guisp=#eb6f92
+hi SpellRare cterm=underline ctermfg=1 ctermbg=NONE guisp=#eb6f92
+hi SpellLocal cterm=underline ctermfg=1 ctermbg=NONE guisp=#eb6f92
 
 " ==  STATUSLINE  ================================
 " ---  REFERENCES  -------------------------------
