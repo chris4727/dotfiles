@@ -190,16 +190,11 @@ call plug#begin('~/.vim/autoload')
   Plug 'junegunn/goyo.vim'
 " Documents
 " Plug 'lervag/vimtex'
-""  Plug 'vim-pandoc/vim-pandoc'
-""  Plug 'rwxrob/vim-pandoc-syntax-simple'
+"  Plug 'vim-pandoc/vim-pandoc'
   Plug 'vimwiki/vimwiki'
 " Version control
-" TODO: Set vim signify to show diff in git bare repo.
   Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
-" Completion
-"Plug 'SirVer/ultisnips'
-  Plug 'Exafunction/codeium.vim'
 " Utilities
   Plug 'vim-scripts/AutoComplPop'
   Plug 'tpope/vim-surround'
@@ -209,15 +204,12 @@ call plug#begin('~/.vim/autoload')
   Plug 'tpope/vim-vinegar'
   Plug 'junegunn/fzf.vim'
 " Languages
-  Plug 'dense-analysis/ale'
   Plug 'jalvesaq/Nvim-R'
   Plug 'gaalcaras/ncm-R'
   Plug 'tbastos/vim-lua'
-  "Plug 'kmonad/kmonad-vim'
-  "Plug 'Fymyte/rasi.vim'
+  Plug 'Fymyte/rasi.vim'
 " TODO: Add/configure the following plugins 
 "Plug 'will133/vim-dirdiff'
-"Plug 'AndrewRadev/linediff.vim'
 "Plug 'dhruvasagar/vim-table-mode'
 
 call plug#end()
@@ -247,13 +239,6 @@ let g:goyo_width = 70
 """ Specify absolute path to prevent scanning entire runtimepath
 "let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 """ TODO Set vim and zettlr to share snippet directory if possible?
-
-"" ---  CODEIUM  ---------------------------------
-
-let g:codeium_filetypes = {
-    \ "markdown": v:false,
-    \ "pandoc": v:false,
-    \ }
 
 " ---  FZF  --------------------------------------
 map <C-f> <Esc><Esc>:Files!<CR>			"FZF in directory
