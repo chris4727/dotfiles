@@ -17,6 +17,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
+export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export EDITOR="vim"
 export FILEMANAGER="yazi"
 export BROWSER="qutebrowser"
@@ -129,8 +130,8 @@ _have pandoc && . <(pandoc --bash-completion)
 # --- PERSONALIZED CONFIGURATIONS  ---------------
 
 #_source_if "$HOME/.config/bash/aliases.local"
-_source_if "$HOME/.bash_aliases"
-_source_if "$HOME/.bash_functions"
+_source_if "$XDG_CONFIG_HOME/bash/aliases"
+_source_if "$XDG_CONFIG_HOME/bash/functions"
 
 # ---  PROMPT  -----------------------------------
 
@@ -150,7 +151,6 @@ nc='\[\e[0m\]' # No Color
 ps1() {
   export PS1="$prp\u$grn@$prp\h$grn:$prp\W$grn->$nc "
 }
-
 
 # Use starship if installed, else use bash ps1
 if [ -x "$(command -v starship)" ]; then
