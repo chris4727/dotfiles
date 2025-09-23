@@ -35,6 +35,11 @@ export SCRIPTS="$HOME/.local/bin"
 export TEMPLATES="$HOME/Templates"
 export VIDEOS="$HOME/Videos"
 
+# Checks if nvim is installed
+if _have "nvim"; then
+  export EDITOR="nvim"
+fi
+
 export DISTRO
 [[ $(uname) =~ Linux ]] && DISTRO=linux
 [[ $(uname -r) =~ arch ]] && DISTRO=archlinux
