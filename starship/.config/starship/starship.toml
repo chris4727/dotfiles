@@ -14,54 +14,61 @@ $line_break\
 $character
 """
 
-continuation_prompt = '[ ∙ ](color_blue)'
+continuation_prompt = '[∙∙∙](bl1)'
 
-#palette = 'gruvbox_dark'
+#palette = 'gruvbox-dark'
 #palette = "rosepine-dawn"
 palette = "rosepine"
 
-[palettes.gruvbox_dark]
-color_fg0 = '#fbf1c7'
-color_bg0 = '#282828'
-color_bg1 = '#3c3836'
-color_bg3 = '#665c54'
-color_blue = '#458588'
-color_aqua = '#689d6a'
-color_green = '#b8bb26'
-color_orange = '#d65d0e'
-color_purple = '#b16286'
-color_red = '#cc241d'
-color_yellow = '#d79921'
-
+[palettes.gruvbox-dark]
+fg0 = '#fbf1c7'
+bg0 = '#282828'
+bg1 = '#3c3836'
+bg2 = '#665c54'
+bl1 = '#458588'
+cy1 = '#689d6a'
+gn1 = '#b8bb26'
+yl2 = '#d65d0e'
+pr1 = '#b16286'
+rd1 = '#cc241d'
+yl1 = '#d79921'
 
 [palettes.rosepine-dawn]
-color_fg0 = '#575279'
-color_bg0 = '#faf4ed'
-color_bg1 = '#f2e9e1'
-color_bg3 = '#9893a5'
-color_red = '#b4637a'
-color_yellow = '#ea9d34'
-color_aqua = '#d7827e'
-color_blue = '#286983'
-color_green = '#56949f'
-color_purple = '#907aa9'
+fg0 = '#575279'
+bg0 = '#faf4ed'
+bg1 = '#f2e9e1'
+bg2 = '#9893a5'
+rd1 = '#b4637a'
+yl1 = '#ea9d34'
+cy1 = '#d7827e'
+bl1 = '#286983'
+gn1 = '#56949f'
+pr1 = '#907aa9'
 
 [palettes.rosepine]
-color_fg0 = '#e0def4'
-color_bg0 = '#191724'
-color_bg1 = '#1f1d2e'
-color_bg3 = '#26233a'
-color_red = '#eb6f92'
-color_yellow = '#f6c177'
-color_aqua = '#ebbcba'
-color_blue = '#31748f'
-color_green = '#9ccfd8'
-color_purple = '#c4a7e7'
+bg0 = '#191724'
+bg1 = '#1f1d2e'
+bg2 = '#26233a'
+fg0 = '#e0def4'
+fg1 = '#908caa'
+fg2 = '#6e6a86'
+rd1 = '#eb6f92'
+rd2 = '#eb6f92'
+gn1 = '#9ccfd8'
+gn2 = '#9ccfd8'
+yl1 = '#f6c177'
+yl2 = '#f6c177'
+bl1 = '#31748f'
+bl2 = '#31748f'
+pr1 = '#c4a7e7'
+pr2 = '#c4a7e7'
+cy1 = '#ebbcba'
+cy2 = '#ebbcba'
 
 [os]
 disabled = false
-style = "color_blue"
-#style = "bg:color_purple fg:color_bg0"
+style = "bl1"
+#style = "bg:pr1 fg:bg0"
 
 [os.symbols]
 Windows = "󰍲"
@@ -77,19 +84,19 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "color_purple"
-style_root = "color_purple"
+style_user = "pr1"
+style_root = "pr1"
 format = '[ $user]($style)'
 
 [hostname]
 ssh_only = false
 ssh_symbol = "@"
-format = '[@](color_green)[$hostname ](color_purple)'
+format = '[@](gn1)[$hostname ](pr1)'
 trim_at = '.companyname.com'
 disabled = false
 
 [directory]
-style = "fg:color_aqua bg:color_bg0"
+style = "fg:cy1 bg:bg0"
 format = "[$path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -103,33 +110,33 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = "󰊢"
-style = "color_green"
+style = "gn1"
 format = '[ $symbol $branch]($style)'
 
 [git_status]
-style = "color_red"
+style = "rd1"
 format = '[$all_status$ahead_behind]($style)'
 
 [lua]
 symbol = "󰢱"
-style = "color_blue"
-format = '[$symbol]($style) [$version](color_bg1)'
+style = "bl1"
+format = '[$symbol]($style) [$version](color_fg2)'
 
 [python]
 symbol = ""
-style = "color_blue"
-format = '[$symbol]($style) [$version](color_bg1)'
+style = "bl1"
+format = '[$symbol]($style) [$version](color_fg2)'
 
 [rlang]
 symbol = ""
-style = "color_blue"
-format = '[$symbol]($style) [$version](color_bg1)'
+style = "bl1"
+format = '[$symbol]($style) [$version](color_fg2)'
 
 [time]
 disabled = true
 time_format = "%R"
-style = "bg:color_bg1"
-format = '[[  $time ](fg:color_bg3 bg:color_bg1)]($style)'
+style = "bg:bg1"
+format = '[[  $time ](fg:bg2 bg:bg1)]($style)'
 
 [line_break]
 disabled = false
@@ -137,9 +144,9 @@ disabled = false
 [character]
 # https://starship.rs/config/#character
 disabled = false
-success_symbol = '[->](bold fg:color_green)'
-error_symbol = '[->](bold fg:color_red)'
-vimcmd_symbol = '[<-](bold fg:color_green)' # Only available in ZSH & Fish
-vimcmd_replace_one_symbol = '[<-](bold fg:color_purple)' # Only in Fish
-vimcmd_replace_symbol = '[<-](bold fg:color_purple)' # Only in Fish
-vimcmd_visual_symbol = '[<-](bold fg:color_yellow)' # Only in Fish
+success_symbol = '[->](bold fg:gn1)'
+error_symbol = '[->](bold fg:rd1)'
+vimcmd_symbol = '[<-](bold fg:gn1)' # Only available in ZSH & Fish
+vimcmd_replace_one_symbol = '[<-](bold fg:pr1)' # Only in Fish
+vimcmd_replace_symbol = '[<-](bold fg:pr1)' # Only in Fish
+vimcmd_visual_symbol = '[<-](bold fg:yl1)' # Only in Fish
