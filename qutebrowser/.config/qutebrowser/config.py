@@ -86,6 +86,7 @@ palette = {
 # --- DARK MODE ----------------------------------
 c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.bg = palette["bg0"]
+c.colors.webpage.darkmode.policy.images = 'never'
 # --- STATUSBAR ----------------------------------
 c.colors.statusbar.normal.bg = palette["bg0"]
 c.colors.statusbar.normal.fg = palette["fg2"]
