@@ -1,7 +1,7 @@
 configuration {
     font:                "FiraCode Nerd Font 25";
     show-icons:          true;
-    icon-theme:          "Qogir";
+    icon-theme:          "Papirus";
     display-drun:        "Apps";
     drun-display-format: "{name}";
     scroll-method:       1;
@@ -44,7 +44,7 @@ listview {
 }
 element {
     border:  0;
-    padding: 1px;
+    padding: 4px;
 }
 element-text {
     background-color: inherit;
