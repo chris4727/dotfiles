@@ -1,0 +1,20 @@
+/*******************************************************
+ * ROFI configs i3 keyhint-menu for EndeavourOS
+ * Maintainer: joekamprad [joekamprad //a_t// endeavouros.com]
+ *******************************************************/
+configuration {
+    font:                "Fira Code Nerd Font 25";
+    show-icons:          false;
+    icon-theme:          "Papirus";
+    display-drun:        "KeyHint";
+    drun-display-format: "{name}";
+    scroll-method:       0;
+    disable-history:     false;
+    fullscreen:          false;
+    hide-scrollbar:      true;
+    sidebar-mode:        false;
+}
+
+@import "~/.config/rofi/themes/rosepine.rasi"
+@import "~/.config/rofi/config.rasi"
+
