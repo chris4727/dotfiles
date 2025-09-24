@@ -14,7 +14,7 @@ configuration {
 @import "~/.config/rofi/themes/rosepine.rasi"
 
 window {
-    background-color: @background;
+    background-color: @bg0a;
     border:           1;
     padding:          30;
 }
@@ -28,16 +28,16 @@ mainbox {
 }
 message {
     border:       2px 0px 0px;
-    border-color: @separatorcolor;
+    border-color: @red;
     padding:      1px;
 }
 textbox {
-    text-color: @foreground;
+    text-color: @fg0;
 }
 listview {
     fixed-height: 0;
     border:       8px 0px 0px;
-    border-color: @separatorcolor;
+    border-color: @bg0;
     spacing:      8px;
     scrollbar:    false;
     padding:      2px 0px 0px;
@@ -51,8 +51,8 @@ element-text {
     text-color:       inherit;
 }
 element.normal.normal {
-    background-color: @normal-background;
-    text-color:       @normal-foreground;
+    background-color: @rd1;
+    text-color:       @fg0;
 }
 element.normal.urgent {
     background-color: @urgent-background;
@@ -64,7 +64,7 @@ element.normal.active {
 }
 element.selected.normal {
     background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
+    text-color:       @fg0;
 }
 element.selected.urgent {
     background-color: @selected-urgent-background;
@@ -76,7 +76,7 @@ element.selected.active {
 }
 element.alternate.normal {
     background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
+    text-color:       @fg0;
 }
 element.alternate.urgent {
     background-color: @alternate-urgent-background;
@@ -89,7 +89,7 @@ element.alternate.active {
 scrollbar {
     width:        4px;
     border:       0;
-    handle-color: @normal-foreground;
+    handle-color: @fg0;
     handle-width: 8px;
     padding:      0;
 }
@@ -99,28 +99,28 @@ mode-switcher {
 }
 button {
     spacing:    0;
-    text-color: @normal-foreground;
+    text-color: @fg0;
 }
 button.selected {
     background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
+    text-color:       @fg0;
 }
 inputbar {
     spacing:    0;
-    text-color: @normal-foreground;
+    text-color: @fg0;
     padding:    1px;
 }
 case-indicator {
     spacing:    0;
-    text-color: @normal-foreground;
+    text-color: @fg0;
 }
 entry {
     spacing:    0;
-    text-color: @normal-foreground;
+    text-color: @fg0;
 }
 prompt {
     spacing:    0;
-    text-color: @normal-foreground;
+    text-color: @fg0;
 }
 inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
@@ -129,5 +129,5 @@ textbox-prompt-colon {
     expand:     false;
     str:        ":";
     margin:     0px 0.3em 0em 0em;
-    text-color: @normal-foreground;
+    text-color: @fg0;
 }
