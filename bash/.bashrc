@@ -13,38 +13,40 @@ _have() { type "$1" &>/dev/null; }
 
 # ---  ENVIRONMENT VARIABLES  --------------------
 
+
+export OS
+[[ $(uname) =~ Linux ]] && OS=linux
+[[ $(uname -o) =~ Msys ]] && OS=windows
+#[[ $(uname -o) =~ Darwin ]] && OS=apple
+# TODO add the rest
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export EDITOR="vim"
-export FILEMANAGER="yazi"
-export BROWSER="qutebrowser"
-export TERMINAL="kitty"
 export TERM="xterm-256color"
 export DOCUMENTS="$HOME/Documents"
 export DOTFILES=$HOME/dotfiles
 export DOWNLOADS="$HOME/Downloads"
 export MUSIC="$HOME/Music"
-export MEDIA="/run/media/$USER"
-export JELLYFIN="/run/media/$USER/4THDD01/Media"
 export NOTES="$HOME/Notes"
 export PICTURES="$HOME/Pictures"
 export SCRIPTS="$HOME/.local/bin"
 export TEMPLATES="$HOME/Templates"
 export VIDEOS="$HOME/Videos"
+if [[ $OS == "linux" ]]; then
+  export FILEMANAGER="yazi"
+  export BROWSER="qutebrowser"
+  export TERMINAL="kitty"
+  export MEDIA="/run/media/$USER"
+  export JELLYFIN="/run/media/$USER/4THDD01/Media"
+fi
 
 # Checks if nvim is installed
 if _have "nvim"; then
   export EDITOR="nvim"
 fi
-
-export DISTRO
-[[ $(uname) =~ Linux ]] && DISTRO=linux
-[[ $(uname -r) =~ arch ]] && DISTRO=archlinux
-#[[ $(uname -r) =~ Microsoft ]] && DISTRO=windows
-# TODO add the rest
 
 # Set Caps Lock to Esc
 # TODO Does this work on Windows? Add if $DISTRO != windows if needed.
