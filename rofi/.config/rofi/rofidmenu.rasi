@@ -1,3 +1,5 @@
+//== ROFI CONFIG =================================
+
 configuration {
     font:                "FiraCode Nerd Font 25";
     show-icons:          true;
@@ -13,100 +15,114 @@ configuration {
 
 @import "~/.config/rofi/themes/rosepine.rasi"
 
-window {
+//-- WINDOW SETTINGS -----------------------------
+
+window { // Main window background
     background-color: @bg1a;
-    border:           1;
-    padding:          30;
+    border:           2; // Window edge border
+    border-color:     @bg2;
+    padding:          25;
 }
-listview {
-    lines:   10;
-    columns: 1;
-}
-mainbox {
+mainbox { // Box inside main window that holds the list
     border:  0;
     padding: 0;
 }
-message {
-    border:       2px 0px 0px;
-    border-color: @red;
-    padding:      1px;
+listview { // List formatting
+    lines:   10;
+    columns: 1;
+}
+
+//-- MESSAGES ------------------------------------
+
+message { // Error/Warning message formatting
+    border:       0px 0px 0px;
+    border-color: @rd1;
+    padding:      10px;
 }
 textbox {
-    text-color: @fg0;
+    text-color: @yl1;
 }
+
+//-- LIST SETTINGS -------------------------------
+
 listview {
     fixed-height: 0;
     border:       0px 0px 0px;
-    border-color: @bg1a;
-    spacing:      8px;
-    scrollbar:    false;
+    border-color: @bg0;
+    spacing:      8px; // Spacing between entries
+    scrollbar:    true;
     padding:      8px 8px 8px;
-}
-element {
-    border:  0;
-    padding: 4px;
-}
-element-text {
-    background-color: inherit;
-    text-color:       inherit;
-}
-element.normal.normal {
-    background-color: inherit;
-    text-color:       @fg0;
-}
-element.normal.urgent {
-    background-color: @bg1;
-    text-color:       @rd1;
-}
-element.normal.active {
-    background-color: @active-background;
-    text-color:       @rd1;
-}
-element.selected.normal {
-    background-color: @pr1;
-    text-color:       @bg0;
-}
-element.selected.urgent {
-    background-color: @bg2;
-    text-color:       @rd1;
-}
-element.selected.active {
-    background-color: @bg0;
-    text-color:       @rd1;
-}
-element.alternate.normal {
-    background-color: inherit;
-    text-color:       @fg0;
-}
-element.alternate.urgent {
-    background-color: inherit;
-    text-color:       @rd1;
-}
-element.alternate.active {
-    background-color: inherit;
-    text-color:       @bl1;
 }
 scrollbar {
     width:        4px;
-    border:       0;
-    handle-color: @fg0;
-    handle-width: 8px;
+    border:       0; // border around scrollbar
+    handle-color: @bg2;
+    handle-width: 4px;
     padding:      0;
 }
-mode-switcher {
+element { // Border around individial list items
+    border:  0;
+    border-color: @bg0;
+    padding: 4px;
+}
+element-text { // Individial list item colors
+    background-color: inherit;
+    text-color:       inherit;
+}
+element.normal.active { // Focused app in window switcher
+    background-color: inherit;
+    text-color:       @yl1;
+}
+element.selected.normal { // Currently selected in rofi
+    background-color: @pr1;
+    text-color:       @bg0;
+}
+element.selected.active { // Focused app currently selected in window switcher
+    background-color: @yl1;
+    text-color:       @bg0;
+}
+element.selected.urgent { // UNKNOWN
+    background-color: @rd1;
+    text-color:       @bg0;
+}
+element.normal.normal { // Odd list items
+    background-color: inherit;
+    text-color:       @fg0;
+}
+element.normal.urgent { // UNKNOWN
+    background-color: inherit;
+    text-color:       @rd1;
+}
+element.alternate.normal { // Even list items
+    background-color: inherit;
+    text-color:       @fg0;
+}
+element.alternate.urgent { // UNKNOWN
+    background-color: inherit;
+    text-color:       @rd1;
+}
+element.alternate.active { // UNKNOWN
+    background-color: inherit;
+    text-color:       @rd1;
+}
+
+//-- BUTTON SETTINGS -----------------------------
+
+mode-switcher { // Buttons display when sidebar-mode is on
     border:       0px 0px 0px;
-    border-color: @rd1;
+    border-color: @bg0;
 }
 button {
-    spacing:    0;
-    text-color: @fg0;
+    spacing:    1;
+    text-color: @fg2;
 }
 button.selected {
-    background-color: @rd1;
-    text-color:       @fg0;
+    background-color: @pr1;
+    text-color:       @bg0;
 }
 
 //-- INPUT BAR -----------------------------------
+
 inputbar {
     spacing:    0;
     padding:    1px;
@@ -125,9 +141,9 @@ entry {  // Cursor line, and input text
     spacing:    0;
     text-color: @cy1;
 }
-case-indicator { /* UNKNOWN */
+case-indicator { // UNKNOWN
     spacing:    0;
-    text-color: @fg1;
+    text-color: @fg0;
 }
 inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
