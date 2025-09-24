@@ -4,7 +4,8 @@ configuration {
     font:                "FiraCode Nerd Font 25";
     show-icons:          true;
     icon-theme:          "Papirus";
-    display-drun:        "Apps";
+    display-drun:        "Open";
+    display-window:      "Switch to";
     drun-display-format: "{name}";
     scroll-method:       1;
     disable-history:     false;
