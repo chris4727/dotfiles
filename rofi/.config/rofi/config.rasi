@@ -1,21 +1,6 @@
-//== ROFI CONFIG =================================
-
-configuration {
-    font:                "FiraCode Nerd Font 25";
-    show-icons:          true;
-    icon-theme:          "Papirus";
-    display-drun:        "Open";
-    display-window:      "Switch to";
-    drun-display-format: "{name}";
-    scroll-method:       1;
-    disable-history:     false;
-    sidebar-mode:        false;
-	modes:				  [ combi ];
-	combi-modes: [window, drun, calc, run ];
-}
+//== ROFI BASE CONFIG ============================
 
 @import "~/.config/rofi/themes/rosepine.rasi"
-@import "~/.config/rofi/config.rasi"
 
 //-- WINDOW SETTINGS -----------------------------
 
