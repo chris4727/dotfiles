@@ -150,7 +150,7 @@ bindsym $sup+ctrl+Up resize grow height 5 px or 5ppt
 bindsym $sup+ctrl+Down resize shrink height 5 px or 5ppt
 
 # Show keybindings in rofi
-bindsym F1 exec ~/.config/i3/scripts/keyhint-2
+bindsym F1 exec ~/.config/i3/scripts/keyhint
 ## keybinding list in editor:
 #bindsym $sup+F1 exec vim ~/.config/i3/keybindings
 
