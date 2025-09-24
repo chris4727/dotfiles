@@ -63,8 +63,8 @@ element.normal.active {
     text-color:       @rd1;
 }
 element.selected.normal {
-    background-color: @bg2;
-    text-color:       @pr1;
+    background-color: @pr1;
+    text-color:       @bg0;
 }
 element.selected.urgent {
     background-color: @bg2;
@@ -94,15 +94,15 @@ scrollbar {
     padding:      0;
 }
 mode-switcher {
-    border:       2px 0px 0px;
-    border-color: @separatorcolor;
+    border:       0px 0px 0px;
+    border-color: @rd1;
 }
 button {
     spacing:    0;
     text-color: @fg0;
 }
 button.selected {
-    background-color: @selected-normal-background;
+    background-color: @rd1;
     text-color:       @fg0;
 }
 
