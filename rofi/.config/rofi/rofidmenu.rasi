@@ -105,29 +105,31 @@ button.selected {
     background-color: @selected-normal-background;
     text-color:       @fg0;
 }
+
+//-- INPUT BAR -----------------------------------
 inputbar {
     spacing:    0;
-    text-color: @fg0;
     padding:    1px;
 }
-case-indicator {
+prompt { // Text prompt
     spacing:    0;
-    text-color: @fg0;
-}
-entry {
-    spacing:    0;
-    text-color: @fg0;
-}
-prompt {
-    spacing:    0;
-    text-color: @fg0;
-}
-inputbar {
-    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    text-color: @pr1;
 }
 textbox-prompt-colon {
     expand:     false;
     str:        ":";
     margin:     0px 0.3em 0em 0em;
-    text-color: @fg0;
+    text-color: @pr1;
 }
+entry {  // Cursor line, and input text
+    spacing:    0;
+    text-color: @cy1;
+}
+case-indicator { /* UNKNOWN */
+    spacing:    0;
+    text-color: @fg1;
+}
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
