@@ -11,4 +11,6 @@ export FZF_DEFAULT_OPTS='
   --multi --tmux 50%
   --bind=ctrl-p:toggle-preview
   --preview="bat --color=always {}"
+  --preview-label=" PREVIEW "
+  --preview-label-pos="3"
   '
