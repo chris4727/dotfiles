@@ -41,7 +41,7 @@ cd -
 # Tab selects and allows additional selections
 # Enter installs selected packages
 fpac() {
-sudo pacman -S $(pacman -Ssq | fzf --multi --preview="pacman -Si {}" --preview-window=:hidden --bind=space:toggle-preview)
+sudo pacman -S $(pacman -Ssq | fzf --preview="pacman -Si {}" --header="Select packages to install with Tab, then press Enter." --border-label=" PACMAN INSTALL " --preview-label=" PACKAGE INFO " --tmux 70%)
 }
 
 pacrm() {
