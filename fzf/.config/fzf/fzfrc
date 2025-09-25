@@ -6,4 +6,5 @@ export FZF_DEFAULT_OPTS='
   --color=preview-scrollbar:#c4a7e7,preview-label:#c4a7e7,label:#c4a7e7,query:#d9d9d9
   --border="rounded" --border-label=" FZF " --border-label-pos="3" --preview-window="border-rounded"
   --margin="1" --prompt=" -> " --marker="▶" --pointer="▷"
-  --separator="⎯" --scrollbar="▌" --info="right"'
+  --separator="⎯" --scrollbar="▌" --info="right"
+  --multi'
