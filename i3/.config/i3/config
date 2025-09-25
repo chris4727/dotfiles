@@ -199,7 +199,7 @@ bindsym $sup+Return exec kitty
 # Web [b]rowser
 bindsym $sup+b exec /usr/bin/qutebrowser
 # [f]ile manager
-#bindsym $sup+f exec kitty -e lf
+bindsym $sup+f exec kitty -e yazi
 # Screenshot with PrtScn
 bindsym Print exec scrot ~/Pictures/screenshots/%Y%m%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Pictures/Screenshots/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
