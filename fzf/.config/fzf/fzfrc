@@ -1,33 +1,9 @@
-#!/bin/bash
-  export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:#6e6a86 \
-  --color=fg+:#e0def4 \
---color=bg:#191724 \
---color=bg+:#26233a
-  --color=hl:#ebbcba \
-  --color=hl+:#f6c177 \
---color=info:#908caa \
---color=marker:#9ccfd8
-  --color=prompt:#9ccfd8 \
-  --color=spinner:#ebbcba \
---color=pointer:#eb6f92 \
---color=header:#31748f
-  --color=gutter:#191724 \
-  --color=border:#26233a \
---color=separator:#26233a \
---color=scrollbar:#c4a7e7
-  --color=label:#c4a7e7 \
-  --color=query:#d9d9d9 \
-  --border="rounded" \
-  --border-label=" FZF " \
-  --border-label-pos="3" \
-  --preview-window="border-rounded" \
-  --padding="0" \
-    --margin="1" \
-  --prompt="-> " \
-  --marker="▶" \
-  --pointer="▷" \
-  --separator="─" \
-  --scrollbar="▌" \
-  --info="right"
-  '
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=fg:#6e6a86,fg+:#e0def4,bg:#191724,bg+:#26233a
+  --color=hl:#ebbcba,hl+:#f6c177,info:#908caa,marker:#9ccfd8
+  --color=prompt:#c4a7e7,spinner:#ebbcba,pointer:#c4a7e7,header:#31748f
+  --color=gutter:#191724,border:#26233a,separator:#26233a,scrollbar:#c4a7e7
+  --color=preview-scrollbar:#c4a7e7,preview-label:#c4a7e7,label:#c4a7e7,query:#d9d9d9
+  --border="rounded" --border-label=" FZF " --border-label-pos="3" --preview-window="border-rounded"
+  --margin="1" --prompt=" -> " --marker="▶" --pointer="▷"
+  --separator="⎯" --scrollbar="▌" --info="right"'
