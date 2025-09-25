@@ -75,6 +75,9 @@ if [[ -x /usr/bin/lesspipe ]]; then
 	export LESSCLOSE="/usr/bin/lesspipe %s %s"
 fi
 
+# Use bat as manpager
+eval "$(batman --export-env)"
+
 # ---  DIRCOLORS  ---------------------------------
 
 if _have dircolors; then
