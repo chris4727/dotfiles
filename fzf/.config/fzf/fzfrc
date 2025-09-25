@@ -7,6 +7,7 @@ export FZF_DEFAULT_OPTS='
   --border="rounded" --border-label=" FZF " --border-label-pos="3" --preview-window="border-rounded"
   --margin="1" --prompt=" -> " --marker="▶" --pointer="▷"
   --separator="⎯" --scrollbar="▌" --info="right"
+  --ghost="find…"
   --multi --tmux 50%
   --bind=ctrl-p:toggle-preview
   --preview="bat --color=always {}"
