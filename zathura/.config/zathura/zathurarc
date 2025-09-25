@@ -3,7 +3,7 @@
 #=============================================
 
 # ==  THEME  =================================
-include themes/gruvbox.conf
+include themes/rosepine.conf
 
 # ==  KEYMAPS  ===============================
 map u scroll half-up
@@ -25,3 +25,4 @@ set statusbar-v-padding 0
 set page-padding 1
 set recolor true
 set recolor-keephue true
+set database sqlite
