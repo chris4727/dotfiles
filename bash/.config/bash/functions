@@ -36,14 +36,6 @@ find -type f | fzf --preview="head -$LINES {}"
 cd -
 }
 
-# Search pacman repo with fzf. 
-# <space> toggles preview of selected package
-# Tab selects and allows additional selections
-# Enter installs selected packages
-fpac() {
-sudo pacman -S $(pacman -Ssq | fzf --preview="pacman -Si {}" --header="Select packages to install with Tab, then press Enter." --border-label=" PACMAN INSTALL " --preview-label=" PACKAGE INFO " --tmux 70%)
-}
-
 pacrm() {
 # Lists all user-installed packages '-Qet'. '-q' forces plain text.
 pacman -Qetq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rs
