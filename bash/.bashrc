@@ -21,7 +21,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
-export EDITOR="vim"
 export TERM="xterm-256color"
 export DOCUMENTS="$HOME/Documents"
 export DOTFILES=$HOME/dotfiles
@@ -39,9 +38,11 @@ if [[ $OS == "linux" ]]; then
   export MEDIA="/run/media/$USER"
 fi
 
-# Checks if nvim is installed
+# Use nvim if installed
 if _have "nvim"; then
   export EDITOR="nvim"
+else
+  export EDITOR="vim"
 fi
 
 # Set Caps Lock to Esc
