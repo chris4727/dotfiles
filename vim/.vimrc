@@ -153,6 +153,21 @@ nnoremap k kzz
   set splitbelow splitright
 " Switch between splits
   nnoremap <leader>w <C-w>w
+" If not running in Tmux:
+  if !exists('$TMUX')
+    echo "Not in Tmux"
+" Navigate between splits with Alt+hjkl
+" TODO hjkl keys not working
+"    nmap <A-h> <C-w>h
+"    nmap <A-j> <C-w>j
+"    nmap <A-k> <C-w>k
+"    nmap <A-l> <C-w>l
+" Or with Alt+Arrow keys
+    nnoremap <A-Left> <C-w>h
+    nnoremap <A-Down> <C-w>j
+    nnoremap <A-Up> <C-w>k
+    nnoremap <A-Right> <C-w>l
+  endif
 
 " ---  AUTOCOMMANDS  -----------------------------
 

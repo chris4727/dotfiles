@@ -59,6 +59,15 @@ Tabs in the terminal are generally used to contain Tmux sessions when on differe
 - *Local leader* = `;`
 - *Show file directory* = `-`
 - *Source config* = `Leader c`
+
+- *Split vertically (right)* = `Leader v`
+- *Split horizontally (down)* = `Leader d`
+- Swap between Vim split panes = `Leader w`
+- *Move to left pane* = `Alt+h` or `Alt+Left`[^1]
+- *Move to lower pane* = `Alt+j` or `Alt+Down`[^1]
+- *Move to upper pane* = `Alt+k` or `Alt+Up`[^1]
+- *Move to right pane* = `Alt+l` or `Alt+Right`[^1]
+ 
 - *F4* = `Toggle Line numbers`
 - *F7* = `Toggle Spellcheck`
 - *F8* = `Toggle visible whitespace`
@@ -69,3 +78,5 @@ Tabs in the terminal are generally used to contain Tmux sessions when on differe
 - *Normal mode: Fuzzy find and open a file in directory* = `Ctrl+f`
 - *Fuzzy find git commits* = `Ctrl+f`
 
+[^1]: Since Vim splits are only used on machines without Tmux installed, navigating Vim splits uses the same bindings as Tmux panes. The bindings are only applied in Vim if not running in a Tmux session.
+ 
