@@ -84,7 +84,11 @@ bind '"\C-t":"tmx\n"'
 
 # ---  FILES  -----------------------------------
 
-alias open='xdg-open'		# Open using default program
+if [[ $OS = linux ]]; then
+  alias open='xdg-open'		# Open using default program
+elif [[ $OS = windows ]]; then
+  alias open='start'		  # Open using default program
+fi
 # TODO Set i3 to play mpv and feh fullscreen
 alias icat='kitty +kitten icat'	# Image cat
 alias image='magick'			# Convert image with imagemagick
