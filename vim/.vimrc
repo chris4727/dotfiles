@@ -1,11 +1,8 @@
 " ==  VIMRC  =====================================
 "  Requires:
 "	- vim-plug: curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"=================================================
 
-" ==  SETTINGS  ==================================
-
-" ---  GENERAL  ----------------------------------
+" ==  GENERAL  ===================================
 
 set nocompatible
 filetype plugin on
@@ -89,7 +86,6 @@ set hlsearch
 " ---  LEADER  -----------------------------------
 
   map <Leader>c :source $MYVIMRC<CR>  " Source vimrc
-" Add new todo above this line
 "" Check file in shellcheck:
 "	map <leader>s :!clear && shellcheck -x %<CR>
 "" Open corresponding .pdf/.html or preview
@@ -153,7 +149,7 @@ nnoremap k kzz
 " Horizontal split
   nnoremap <leader>d :sp 
 
-set splitbelow splitright
+  set splitbelow splitright
 " Switch between splits
   nnoremap <leader>w <C-w>w
 
