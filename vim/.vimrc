@@ -55,7 +55,7 @@ set smarttab      " Ensures backspace removes expanded tabs as expected
   set wildmode=list:longest
   set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.exe,*.img,.xlsx
 " TODO: Get this working
-"set complete+=kspell            " <C-p> in insert mode to show spellings
+  set complete+=kspell            " <C-p> in insert mode to show spellings
   set completeopt=menuone,longest " Completion popup settings
   set shortmess+=c                " Removes notifications from footer bar
 
