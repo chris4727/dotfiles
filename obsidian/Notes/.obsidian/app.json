@@ -40,7 +40,7 @@
   "showInlineTitle": true,
   "showLineNumber": true,
   "vimMode": true,
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "newLinkFormat": "shortest",
   "userIgnoreFilters": null,
   "strictLineBreaks": true,
