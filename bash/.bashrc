@@ -13,7 +13,6 @@ _have() { type "$1" &>/dev/null; }
 
 # ---  ENVIRONMENT VARIABLES  --------------------
 
-
 export OS
 [[ $(uname) =~ Linux ]] && OS=linux
 [[ $(uname -o) =~ Msys ]] && OS=windows
@@ -40,7 +39,6 @@ if [[ $OS == "linux" ]]; then
   export BROWSER="qutebrowser"
   export TERMINAL="kitty"
   export MEDIA="/run/media/$USER"
-  export JELLYFIN="/run/media/$USER/4THDD01/Media"
 fi
 
 # Checks if nvim is installed
