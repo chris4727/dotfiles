@@ -1,11 +1,8 @@
 " ==  VIMRC  =====================================
 "  Requires:
 "	- vim-plug: curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"=================================================
 
-" ==  SETTINGS  ==================================
-
-" ---  GENERAL  ----------------------------------
+" ==  GENERAL  ===================================
 
 set nocompatible
 filetype plugin on
@@ -55,7 +52,7 @@ set smarttab      " Ensures backspace removes expanded tabs as expected
   set wildmode=list:longest
   set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.exe,*.img,.xlsx
 " TODO: Get this working
-"set complete+=kspell            " <C-p> in insert mode to show spellings
+  set complete+=kspell            " <C-p> in insert mode to show spellings
   set completeopt=menuone,longest " Completion popup settings
   set shortmess+=c                " Removes notifications from footer bar
 
@@ -89,12 +86,6 @@ set hlsearch
 " ---  LEADER  -----------------------------------
 
   map <Leader>c :source $MYVIMRC<CR>  " Source vimrc
-" Add new todo above this line
-"TODO change these to `.md` aucmd
-  nnoremap <leader>t O- [ ] 
-"Check todo and move to bottom of file
-"TODO change these to `.md` aucmd
-  nnoremap <leader>x  :.s/^-\ \[\ \]/-\ \[x\]/<CR>ddGp
 "" Check file in shellcheck:
 "	map <leader>s :!clear && shellcheck -x %<CR>
 "" Open corresponding .pdf/.html or preview
@@ -153,12 +144,13 @@ nnoremap j jzz
 nnoremap k kzz
 
 " ---  SPLITS  -----------------------------------
+
 " Vertical split
   nnoremap <leader>v :vsp 
 " Horizontal split
   nnoremap <leader>d :sp 
 
-set splitbelow splitright
+  set splitbelow splitright
 " Switch between splits
   nnoremap <leader>w <C-w>w
 
@@ -167,7 +159,7 @@ set splitbelow splitright
 " Set filetypes
 	autocmd BufRead,BufNewFile *.md,*.man set filetype=pandoc
 	autocmd BufRead,BufNewFile *.tex set filetype=tex
-	autocmd BufRead,BufNewFile .bash* set filetype=sh
+	autocmd BufRead,BufNewFile .bash*,.env* set filetype=sh
 
 " ==  PLUGINS  ===================================
 
@@ -185,8 +177,8 @@ call plug#begin('~/.vim/autoload')
   Plug 'ap/vim-css-color'
   Plug 'junegunn/goyo.vim'
 " Documents
-" Plug 'lervag/vimtex'
-"  Plug 'vim-pandoc/vim-pandoc'
+  Plug 'godlygeek/tabular'
+  Plug 'preservim/vim-markdown'
   Plug 'vimwiki/vimwiki'
 " Version control
   Plug 'mhinz/vim-signify'
@@ -223,6 +215,28 @@ let g:vimtex_view_method = 'zathura'
 
 let g:vimwiki_list = [{'path': '~/Notes/',
                       \ 'syntax': 'markdown', 'ext': 'md'}]
+
+" ---  MARKDOWN  ---------------------------------
+
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_math = 1 " Allow LaTeX math
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_strikethrough = 1
+let g:vim_markdown_autowrite = 1
+"TODO change these to `.md` aucmd
+" Format table under cursor
+  nnoremap <C-t> :TableFormat<CR>
+"Check todo
+  nnoremap <leader>x  :.s/^-\ \[\ \]/-\ \[x\]/<CR>
+
+" ---  TABULAR  ----------------------------------
+
+if exists(":Tabularize")
+  nmap <leader>t= :Tabularize /=<CR>
+  vmap <leader>t= :Tabularize /=<CR>
+  nmap <leader>t: :Tabularize /:\zs<CR>
+  vmap <leader>t: :Tabularize /:\zs<CR>
+endif
 
 " ---  GOYO  -------------------------------------
 let g:goyo_width = 70
