@@ -1,7 +1,6 @@
-#================================================
-# .bash_aliases
-#================================================
+#== BASH ALIASES =================================
 # This file is sourced by ~/.bashrc
+# Sourced from "$XDG_CONFIG_HOME/bash/aliases"
 
 # Find most common commands using: 
 # TODO Get this alias working to show top commands in history

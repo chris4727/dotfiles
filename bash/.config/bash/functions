@@ -1,7 +1,6 @@
-#================================================
-# .bash_functions
-#================================================
+#== BASH FUNCTIONS ===============================
 # This file is sourced by ~/.bashrc
+# Sourced from "$XDG_CONFIG_HOME/bash/functions"
 
 # TODO Move these to standalone scripts
 

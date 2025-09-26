@@ -1,6 +1,4 @@
-#================================================
-# .bashrc
-#================================================
+#== BASHRC =======================================
 # This file runs every time a new terminal is opened
 
 # If not running interactively, don't do anything
