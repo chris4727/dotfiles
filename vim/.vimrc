@@ -230,6 +230,15 @@ let g:vim_markdown_autowrite = 1
 "Check todo
   nnoremap <leader>x  :.s/^-\ \[\ \]/-\ \[x\]/<CR>
 
+" ---  TABULAR  ----------------------------------
+
+if exists(":Tabularize")
+  nmap <leader>t= :Tabularize /=<CR>
+  vmap <leader>t= :Tabularize /=<CR>
+  nmap <leader>t: :Tabularize /:\zs<CR>
+  vmap <leader>t: :Tabularize /:\zs<CR>
+endif
+
 " ---  GOYO  -------------------------------------
 let g:goyo_width = 70
 
