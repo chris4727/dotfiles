@@ -30,7 +30,6 @@ alias paste='xclip -selection clipboard -o'
 alias dot='cd /$DOTFILES && ll'
 alias bin='cd /$SCRIPTS && ll'
 alias media='cd /$MEDIA && ll'
-alias jelly='cd /$JELLYFIN && ll'
 
 # ---  LIST  -----------------------------------
 

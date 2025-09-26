@@ -139,8 +139,8 @@ _have pandoc && . <(pandoc --bash-completion)
 
 # --- PERSONALIZED CONFIGURATIONS  ---------------
 
-#_source_if "$HOME/.config/bash/aliases.local"
 _source_if "$XDG_CONFIG_HOME/bash/aliases"
+_source_if "$XDG_CONFIG_HOME/bash/aliases.local"
 _source_if "$XDG_CONFIG_HOME/bash/functions"
 _source_if "$XDG_CONFIG_HOME/fzf/fzfrc"
 
