@@ -90,11 +90,6 @@ set hlsearch
 
   map <Leader>c :source $MYVIMRC<CR>  " Source vimrc
 " Add new todo above this line
-"TODO change these to `.md` aucmd
-  nnoremap <leader>t O- [ ] 
-"Check todo and move to bottom of file
-"TODO change these to `.md` aucmd
-  nnoremap <leader>x  :.s/^-\ \[\ \]/-\ \[x\]/<CR>ddGp
 "" Check file in shellcheck:
 "	map <leader>s :!clear && shellcheck -x %<CR>
 "" Open corresponding .pdf/.html or preview
@@ -185,8 +180,8 @@ call plug#begin('~/.vim/autoload')
   Plug 'ap/vim-css-color'
   Plug 'junegunn/goyo.vim'
 " Documents
-" Plug 'lervag/vimtex'
-"  Plug 'vim-pandoc/vim-pandoc'
+  Plug 'godlygeek/tabular'
+  Plug 'preservim/vim-markdown'
   Plug 'vimwiki/vimwiki'
 " Version control
   Plug 'mhinz/vim-signify'
@@ -223,6 +218,21 @@ let g:vimtex_view_method = 'zathura'
 
 let g:vimwiki_list = [{'path': '~/Notes/',
                       \ 'syntax': 'markdown', 'ext': 'md'}]
+
+" ---  MARKDOWN  ---------------------------------
+
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_math = 1 " Allow LaTeX math
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_strikethrough = 1
+let g:vim_markdown_autowrite = 1
+"TODO change these to `.md` aucmd
+" Format table under cursor
+  nnoremap <C-t> :TableFormat<CR>
+" Create new checkbox
+  inoremap <leader>t O- [ ]
+"Check todo
+  nnoremap <leader>x  :.s/^-\ \[\ \]/-\ \[x\]/<CR>
 
 " ---  GOYO  -------------------------------------
 let g:goyo_width = 70
