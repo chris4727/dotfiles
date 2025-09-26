@@ -15,7 +15,6 @@ export OS
 [[ $(uname) =~ Linux ]] && OS=linux
 [[ $(uname -o) =~ Msys ]] && OS=windows
 #[[ $(uname -o) =~ Darwin ]] && OS=apple
-# TODO add the rest
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
@@ -36,6 +35,10 @@ if [[ $OS == "linux" ]]; then
   export BROWSER="qutebrowser"
   export TERMINAL="kitty"
   export MEDIA="/run/media/$USER"
+elif [[ $OS == "windows" ]]; then
+  export FILEMANAGER="explorer"
+  export BROWSER="chrome"
+  export TERMINAL="mintty"
 fi
 
 # Use nvim if installed
@@ -46,8 +49,9 @@ else
 fi
 
 # Set Caps Lock to Esc
-# TODO Does this work on Windows? Add if $DISTRO != windows if needed.
-test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
+if [[ $OS == "linux" ]]; then
+  test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
+fi
 
 # ---  SETTINGS  ----------------------------------
 
