@@ -158,7 +158,7 @@ nnoremap k kzz
 " Set filetypes
 	autocmd BufRead,BufNewFile *.md,*.man set filetype=pandoc
 	autocmd BufRead,BufNewFile *.tex set filetype=tex
-	autocmd BufRead,BufNewFile .bash* set filetype=sh
+	autocmd BufRead,BufNewFile .bash*,.env* set filetype=sh
 
 " ==  PLUGINS  ===================================
 
