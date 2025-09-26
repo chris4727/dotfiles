@@ -144,6 +144,7 @@ nnoremap j jzz
 nnoremap k kzz
 
 " ---  SPLITS  -----------------------------------
+
 " Vertical split
   nnoremap <leader>v :vsp 
 " Horizontal split
@@ -225,8 +226,6 @@ let g:vim_markdown_autowrite = 1
 "TODO change these to `.md` aucmd
 " Format table under cursor
   nnoremap <C-t> :TableFormat<CR>
-" Create new checkbox
-  inoremap <leader>t O- [ ]
 "Check todo
   nnoremap <leader>x  :.s/^-\ \[\ \]/-\ \[x\]/<CR>
 
