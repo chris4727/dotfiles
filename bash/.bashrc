@@ -173,7 +173,7 @@ else
 fi
 
 # Use pfetch if installed
-if [ -x "$(command -v pfetch)" ]; then
-  printf "\n\n" && pfetch
+if [ -x "$(command -v nerdfetch)" ]; then
+  printf "\n" && nerdfetch
 fi
 
