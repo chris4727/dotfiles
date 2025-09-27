@@ -198,6 +198,8 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $sup+Return exec kitty
 # Web [b]rowser
 bindsym $sup+b exec /usr/bin/qutebrowser
+# Signal [m]essenger
+bindsym $sup+m exec /usr/bin/signal-desktop --password-store="kwallet6"
 # [f]ile manager
 #bindsym $sup+f exec kitty -e lf
 # Screenshot with PrtScn
