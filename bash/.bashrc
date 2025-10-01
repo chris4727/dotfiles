@@ -140,9 +140,9 @@ _have pandoc && . <(pandoc --bash-completion)
 
 # --- PERSONALIZED CONFIGURATIONS  ---------------
 
-_source_if "$XDG_CONFIG_HOME/bash/aliases"
-_source_if "$XDG_CONFIG_HOME/bash/aliases.local"
-_source_if "$XDG_CONFIG_HOME/bash/functions"
+_source_if "$XDG_CONFIG_HOME/bash/aliases.sh"
+_source_if "$XDG_CONFIG_HOME/bash/aliases.local.sh"
+_source_if "$XDG_CONFIG_HOME/bash/functions.sh"
 _source_if "$XDG_CONFIG_HOME/fzf/fzfrc"
 
 # ---  PROMPT  -----------------------------------

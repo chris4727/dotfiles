@@ -105,10 +105,6 @@ alias neofetch='clear && neofetch'
 # See: https://github.com/ericmurphyxyz/dotfiles/blob/master/.local/bin/powermenu
 alias reboot='shutdown -r now'
 
-# ---  GREP  -----------------------------------
-
-alias fontgrep='fc-list | grep -i --color=auto'
-
 # ---  RIP DISKS TO FILE  -----------------------------------
 
 # Rip audio CD to flac
