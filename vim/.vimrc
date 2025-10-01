@@ -155,7 +155,6 @@ nnoremap k kzz
   nnoremap <leader>w <C-w>w
 " If not running in Tmux:
   if !exists('$TMUX')
-    echo "Not in Tmux"
 " Navigate between splits with Alt+hjkl
 " TODO hjkl keys not working
 "    nmap <A-h> <C-w>h
@@ -282,8 +281,8 @@ let g:disable_float_bg = 1
 set background=dark
 "let g:gruvbox_contrast_dark = 'medium'
 "colorscheme gruvbox
-colorscheme rosepine
-"colorscheme catppuccin_mocha
+"colorscheme rosepine
+colorscheme catppuccin_mocha
 
 " --- LIGHT MODE  --------------------------------
 

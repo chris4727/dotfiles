@@ -18,7 +18,7 @@ continuation_prompt = '[∙∙∙](bl1)'
 
 #palette = 'gruvbox-dark'
 #palette = "rosepine-dawn"
-palette = "rosepine"
+palette = "catppuccin-mocha"
 
 [palettes.gruvbox-dark]
 fg0 = '#fbf1c7'
@@ -64,6 +64,26 @@ pr1 = '#c4a7e7'
 pr2 = '#c4a7e7'
 cy1 = '#ebbcba'
 cy2 = '#ebbcba'
+
+[palettes.catppuccin-mocha]
+bg0 = '#1e1e2e'
+bg1 = '#181825'
+bg2 = '#11111b'
+fg0 = '#cdd6f4'
+fg1 = '#bac2de'
+fg2 = '#a6adc8'
+rd1 = '#f38ba8'
+rd2 = '#f38ba8'
+gn1 = '#a6e3a1'
+gn2 = '#a6e3a1'
+yl1 = '#f9e2af'
+yl2 = '#f9e2af'
+bl1 = '#89b4fa'
+bl2 = '#89b4fa'
+pr1 = '#cba6f7'
+pr2 = '#cba6f7'
+cy1 = '#89dceb'
+cy2 = '#89dceb'
 
 [os]
 disabled = false
