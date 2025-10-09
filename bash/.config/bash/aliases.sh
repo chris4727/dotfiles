@@ -26,9 +26,9 @@ alias paste='xclip -selection clipboard -o'
 
 # ---  NAVIGATION  -------------------------------
 
-alias dot='cd /$DOTFILES && ll'
-alias bin='cd /$SCRIPTS && ll'
-alias media='cd /$MEDIA && ll'
+alias cddot='cd /$DOTFILES && ll'
+alias cdbin='cd /$SCRIPTS && ll'
+alias cdmed='cd /$MEDIA && ll'
 
 # ---  LIST  -----------------------------------
 
