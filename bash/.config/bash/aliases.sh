@@ -76,10 +76,21 @@ alias pacc='pacman -Qdtq | pacman -Rs'		# Cleanup packages
 
 # ---  APPLICATION LAUNCHERS  -----------------------------------
 
-alias lock='betterlockscreen -l ~/.config/wallpaper/'	# Lock the computer
-alias wall='cp -i $DOTFILES/wallpaper/.config/wallpaper/wallpaper.jpg'
 alias tmx='tmux new-session -A -s Tmux'
 bind '"\C-t":"tmx\n"'
+
+# ---  LOCK & SCREENSAVERS  ----------------------
+
+alias lock='betterlockscreen -l ~/.config/wallpaper/'	# Lock the computer
+alias wall='cp -i $DOTFILES/wallpaper/.config/wallpaper/wallpaper.jpg'
+
+if command -v gomatrix &> /dev/null; then
+  alias matrix='gomatrix'
+fi
+
+if command -v astroterm &> /dev/null; then
+  alias astro='astroterm --color --unicode --speed 100 --fps 8 --city Seattle'
+fi
 
 # ---  FILES  -----------------------------------
 
