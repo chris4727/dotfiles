@@ -6,6 +6,12 @@
 # TODO Get this alias working to show top commands in history
 #alias hist='history | awk '{cmd[$2]++} END {for(elem in cmd) {print cmd[elem] " " elem}}' | sort -n -r | head -10'
 # https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=%s
+# TODO Setup script to read user unput to identify file to set as wallpaper.
+# Copy image to wallpaper directory, and set as wallpaper (will need to refresh window manager).
+# TODO Update pacman aliases for paru package manager
+# TODO Add if statement to check for pacman or paru
+# TODO setup rofi powermenu script 
+# See: https://github.com/ericmurphyxyz/dotfiles/blob/master/.local/bin/powermenu
 
 # ---  GENERAL  ---------------------------------
 
@@ -61,7 +67,6 @@ alias rcp="rsync --archive --human-readable --progress --verbose"
 
 # ---  PACAGE MANAGER  ----------------------- 
 
-# TODO Update for paru package manager
 alias pacu='pacman -Syu && paru'			# Update
 alias pacls='pacman -Qet'					# List user installed packages
 alias pacs='pacman -Ss'					# Search repositories for package
@@ -73,8 +78,6 @@ alias pacc='pacman -Qdtq | pacman -Rs'		# Cleanup packages
 # ---  APPLICATION LAUNCHERS  -----------------------------------
 
 alias lock='betterlockscreen -l ~/.config/wallpaper/'	# Lock the computer
-# TODO Setup script to read user unput to identify file to set as wallpaper.
-# Copy image to wallpaper directory, and set as wallpaper (will need to refresh window manager).
 alias wall='cp -i $HOME/.config/wallpaper/wallpaper.jpg'
 alias tmx='tmux new-session -A -s Tmux'
 bind '"\C-t":"tmx\n"'
@@ -86,7 +89,6 @@ if [[ $OS = linux ]]; then
 elif [[ $OS = windows ]]; then
   alias open='start'		  # Open using default program
 fi
-# TODO Set i3 to play mpv and feh fullscreen
 alias icat='kitty +kitten icat'	# Image cat
 alias image='magick'			# Convert image with imagemagick
 
@@ -101,8 +103,6 @@ alias neofetch='clear && neofetch'
 
 # ---  SHUTDOWN  -----------------------------------
 
-# TODO setup rofi powermenu script 
-# See: https://github.com/ericmurphyxyz/dotfiles/blob/master/.local/bin/powermenu
 alias reboot='shutdown -r now'
 
 # ---  RIP DISKS TO FILE  -----------------------------------
