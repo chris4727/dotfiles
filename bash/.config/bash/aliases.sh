@@ -122,7 +122,7 @@ alias ripcd='abcde -o flac -c $HOME/.config/abcde/abcde.conf && eject'
 
 # ---  GIT  -----------------------------------
 
-alias lgit='lazygit'									# Git tui
+alias lzg='lazygit'									# Git tui
 alias gs='git status -sb'							# Git status
 alias ga='git add'								    # Git add
 alias gg='!git rev-list --all | xargs git grep -F'	# Search commits (grep)
@@ -134,5 +134,5 @@ alias gu='git pull'								    # Git pull (update)
 
 # ---  DOCKER  -----------------------------------
 
-alias ldoc='lazydocker'									# Docker tui
+alias lzd='lazydocker'									# Docker tui
 
