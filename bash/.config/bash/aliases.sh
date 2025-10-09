@@ -22,7 +22,6 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias v='$EDITOR'
 alias file='$FILEMANAGER'
-alias dus='du -d 1 -h | sort -h'
 alias grep='grep --color=auto'
 alias diff='diff -u --color'
 alias diffdir='diff -qr'
@@ -78,7 +77,7 @@ alias pacc='pacman -Qdtq | pacman -Rs'		# Cleanup packages
 # ---  APPLICATION LAUNCHERS  -----------------------------------
 
 alias lock='betterlockscreen -l ~/.config/wallpaper/'	# Lock the computer
-alias wall='cp -i $HOME/.config/wallpaper/wallpaper.jpg'
+alias wall='cp -i $DOTFILES/wallpaper/.config/wallpaper/wallpaper.jpg'
 alias tmx='tmux new-session -A -s Tmux'
 bind '"\C-t":"tmx\n"'
 
@@ -89,17 +88,17 @@ if [[ $OS = linux ]]; then
 elif [[ $OS = windows ]]; then
   alias open='start'		  # Open using default program
 fi
-alias icat='kitty +kitten icat'	# Image cat
 alias image='magick'			# Convert image with imagemagick
 
 # ---  SYSTEM MANAGEMENT  -----------------------------------
 
 # Show disk usage sorted and summarized
+alias dus='du -d 1 -h | sort -h'
 alias btm='btm --battery'
 
 # ---  FETCH  -----------------------------------
 
-alias neofetch='clear && neofetch'
+alias fetch='clear && neofetch'
 
 # ---  SHUTDOWN  -----------------------------------
 
