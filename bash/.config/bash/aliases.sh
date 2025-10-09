@@ -111,18 +111,17 @@ alias ripcd='abcde -o flac -c $HOME/.config/abcde/abcde.conf && eject'
 
 # ---  GIT  -----------------------------------
 
-alias lgit='lazygit'									# Git helper
-alias gits='git status -sb'							# Git status
-alias gitu='git pull'								# Git pull (update)
-alias gita='git add'								# Git add
-alias gitg='!git rev-list --all | xargs git grep -F'	# Search commits (grep)
-alias gitl='git log --oneline'						# Git log
-alias gitd='git diff origin/main'					# Diff staged changes
-alias gitv='git difftool -t vimdiff -y'				# Git vimdiff
-alias gitc='git commit'								# Commit message in editor
-alias gitp='git push -u origin main'				# Git push to origin
+alias lgit='lazygit'									# Git tui
+alias gs='git status -sb'							# Git status
+alias ga='git add'								    # Git add
+alias gg='!git rev-list --all | xargs git grep -F'	# Search commits (grep)
+alias gl='git log --oneline'					# Git log
+alias gd='git diff origin/main'				# Diff staged changes
+alias gc='git commit'								  # Commit message in editor
+alias gp='git push -u origin main'		# Git push to origin
+alias gu='git pull'								    # Git pull (update)
 
 # ---  DOCKER  -----------------------------------
 
-alias ldoc='lazydocker'									# Docker helper
+alias ldoc='lazydocker'									# Docker tui
 
