@@ -52,6 +52,27 @@ if [[ $OS == "linux" ]]; then
   test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
 fi
 
+# ---  COLORS  -----------------------------------
+
+export BG1="\033[0;30m"
+export RD1="\033[0;31m"
+export GN1="\033[0;32m"
+export YL1="\033[0;33m"
+export BL1="\033[0;34m"
+export PR1="\033[0;35m"
+export CY1="\033[0;36m"
+export FG1="\033[0;37m"
+export BG2="\033[0;40m"
+export RD2="\033[0;41m"
+export GN2="\033[0;42m"
+export YL2="\033[0;43m"
+export BL2="\033[0;44m"
+export PR2="\033[0;45m"
+export CY2="\033[0;46m"
+export FG2="\033[0;47m"
+export NC="\033[0m" # No Color
+
+
 # ---  SETTINGS  ----------------------------------
 
 # Use vim keybindings:
