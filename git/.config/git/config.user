@@ -11,4 +11,33 @@
 	cf = config --global -l
 	search = !git rev-list --all | xargs git grep -F
 [core]
-	editor = vim
+	editor = $EDITOR
+[push]
+  autoSetupRemote = true      # Auto track remote
+  default = current           # Default branch current
+  followTags = true
+[pull]
+  default = current           # Default branch current
+  rebase = true
+[rebase]
+  autoStash = true
+  missingCommitsCheck = warn
+[log]
+  abbrevCommit = true         # Shorten commit hash
+  graphColors = green,blue,yellow,cyan,magenta,red
+[color "decorate"]
+  HEAD = magenta
+  branch = blue
+  tag = yellow
+  remoteBranch = red
+[branch]
+  sort = -committerdate
+[color "branch"]
+  current = magenta
+  local = default
+  remote = yellow
+  upstream = green
+  plain = blue
+[tag]
+  sort = -taggerdate
+
