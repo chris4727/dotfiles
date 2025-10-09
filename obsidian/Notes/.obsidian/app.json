@@ -2,8 +2,8 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "root",
   "newFileFolderPath": "0inbox",
-  "attachmentFolderPath": "attachments",
-  "promptDelete": true,
+  "attachmentFolderPath": "utilities/attachments",
+  "promptDelete": false,
   "mobileToolbarCommands": [
     "editor:insert-wikilink",
     "editor:insert-embed",
