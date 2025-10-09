@@ -30,8 +30,7 @@ export PICTURES="$HOME/Pictures"
 export SCRIPTS="$HOME/.local/bin"
 export TEMPLATES="$HOME/Templates"
 export VIDEOS="$HOME/Videos"
-if [[ $OS == "linux" ]]; then
-  export FILEMANAGER="yazi"
+if [[ $OS == "linux" ]]; then export FILEMANAGER="yazi"
   export BROWSER="qutebrowser"
   export TERMINAL="kitty"
   export MEDIA="/run/media/$USER"
@@ -172,7 +171,7 @@ else
   PROMPT_COMMAND='ps1'
 fi
 
-# Use pfetch if installed
+# Use nerdfetch if installed
 if [ -x "$(command -v nerdfetch)" ]; then
   printf "\n" && nerdfetch
 fi
