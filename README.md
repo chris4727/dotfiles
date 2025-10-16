@@ -21,8 +21,12 @@ Personal dotfile repository.
 - *Move to left window* = `Super+h` or `Super+Left`
 - *Move to lower window* = `Super+j` or `Super+Down`
 - *Move to upper window* = `Super+k` or `Super+Up`
-- *Open new terminal window* = `Super+Enter`
-- *Open new browser window* = `Super+b`
+
+### Application launchers
+
+- `Super+Enter` = *Open new terminal window*
+- `Super+b` = *Open new browser window*
+- `Super+m` = *Open Signal Messenger*
 
 ## Terminal
 
