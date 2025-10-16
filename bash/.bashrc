@@ -30,6 +30,7 @@ export NOTES="$HOME/Notes"
 export PICTURES="$HOME/Pictures"
 export SCRIPTS="$HOME/.local/bin"
 export TEMPLATES="$HOME/Templates"
+export TRASH="$HOME/.local/share/Trash"
 export VIDEOS="$HOME/Videos"
 if [[ $OS == "linux" ]]; then
   export FILEMANAGER="dolphin"
