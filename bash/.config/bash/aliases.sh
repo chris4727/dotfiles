@@ -64,6 +64,7 @@ fi
 # ---  FILE HANDLING  -----------------------------------
 
 alias rcp="rsync --archive --human-readable --progress --verbose"
+alias trash="move_to_trash.sh"
 
 # ---  PACAGE MANAGER  ----------------------- 
 
