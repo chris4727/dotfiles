@@ -31,7 +31,8 @@ alias paste='xclip -selection clipboard -o'
 
 # ---  NAVIGATION  -------------------------------
 
-alias dot='cd /$DOTFILES && ll'
+alias conf='cd /$DOTFILES && ll'
+alias dot='cd /$DOTFILE_REPO && ll'
 alias bin='cd /$SCRIPTS && ll'
 alias med='cd /$MEDIA && ll'
 
