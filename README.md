@@ -2,7 +2,6 @@
 
 Personal dotfile repository.
 
-
 # Usage
 
 ## General keybind scheme
@@ -14,13 +13,13 @@ Personal dotfile repository.
 
 ## Window manager
 
-- *Move to workspace <num>* = `Super+<num>`
-- *Split vertically (right)* = `Super+v`
-- *Split horizontally (down)* = `Super+d`
-- *Move to right window* = `Super+l` or `Super+Right`
-- *Move to left window* = `Super+h` or `Super+Left`
-- *Move to lower window* = `Super+j` or `Super+Down`
-- *Move to upper window* = `Super+k` or `Super+Up`
+- `Super+<num>` = *Move to workspace <num>*
+- `Super+v` = *Split vertically (right)*
+- `Super+d` = *Split horizontally (down)*
+- `Super+l` or `Super+Right` = *Move to right window*
+- `Super+h` or `Super+Left` = *Move to left window*
+- `Super+j` or `Super+Down` = *Move to lower window*
+- `Super+k` or `Super+Up` = *Move to upper window*
 
 ### Application launchers
 
@@ -33,69 +32,69 @@ Personal dotfile repository.
 > [!NOTE]
 > Tabs in the terminal are generally used to contain Tmux sessions when on different servers. Typically tab 1 is the current computer, and additional tabs are servers connected through SSH. This prevents having to have nested Tmux sessions.
 
-- *New terminal tab* = `Ctrl+Shift+t`
-- *Move to left tab* = `Ctrl+Shift+left`
-- *Move to right tab* = `Ctrl+Shift+right`
+- `Ctrl+Shift+t` = *New terminal tab*
+- `Ctrl+Shift+left` = *Move to left tab*
+- `Ctrl+Shift+right` = *Move to right tab*
 
 ## Tmux
 
-- *Alias to create or attach to Tmux session* = `$ tmx` or `Ctrl+t`
-- *Leader key* = `Ctrl+Space`
-- *List sessions* = `Leader s`
-- *Create new window and prompt for name* = `Leader w`
-- *Rename window* = `Leader r`
-- *Move to window <num>* = `Leader <num>`
-- *Close window* = `Alt+q`
+- `$ tmx` or `Ctrl+t` = *Alias to create or attach to Tmux session*
+- `Ctrl+Space` = *Leader key*
+- `Leader s` = *List sessions*
+- `Leader w` = *Create new window and prompt for name*
+- `Leader r` = *Rename window*
+- `Leader <num>` = *Move to window <num>*
+- `Alt+q` = *Close window*
 
-- *Close pane* = `Alt+x`
-- *Split pane vertically (right)* = `Leader v`
-- *Split pane horizontally (down)* = `Leader d`
-- *Zoom pane* = `Leader z`
-- *Move to left pane* = `Alt+h` or `Alt+Left`
-- *Move to lower pane* = `Alt+j` or `Alt+Down`
-- *Move to upper pane* = `Alt+k` or `Alt+Up`
-- *Move to right pane* = `Alt+l` or `Alt+Right`
+- `Alt+x` = *Close pane*
+- `Leader v` = *Split pane vertically (right)*
+- `Leader d` = *Split pane horizontally (down)*
+- `Leader z` = *Zoom pane*
+- `Alt+h` or `Alt+Left` = *Move to left pane*
+- `Alt+j` or `Alt+Down` = *Move to lower pane*
+- `Alt+k` or `Alt+Up` = *Move to upper pane*
+- `Alt+l` or `Alt+Right` = *Move to right pane*
 
-- *Open Lazygit in popup* = `Alt+g`
-- *Open new terminal in popup* = `Alt+t`
+- `Alt+g` = *Open Lazygit in popup*
+- `Alt+t` = *Open new terminal in popup*
 
 ## Vim
 
-- *Leader key* = `Space`
-- *Local leader* = `;`
+- `Space` = *Leader key*
+- `;` = *Local leader*
 
 ### Vim Normal Mode
 
-- *Show file directory* = `-`
-- *Source config* = `Leader c`
+- `-` = *Show file directory*
+- `Leader c` = *Source config*
 
-- *Split vertically (right)* = `Leader v`
-- *Split horizontally (down)* = `Leader d`
-- Swap between Vim split panes = `Leader w`
-- *Move to left pane* = `Alt+h` or `Alt+Left`[^1]
-- *Move to lower pane* = `Alt+j` or `Alt+Down`[^1]
-- *Move to upper pane* = `Alt+k` or `Alt+Up`[^1]
-- *Move to right pane* = `Alt+l` or `Alt+Right`[^1]
+- `Leader v` = *Split vertically (right)*
+- `Leader d` = *Split horizontally (down)*
+- `Leader w` = Swap between Vim split panes
+- `Alt+h` or `Alt+Left` = *Move to left pane* [^1]
+- `Alt+j` or `Alt+Down` = *Move to lower pane* [^1]
+- `Alt+k` or `Alt+Up` = *Move to upper pane* [^1]
+- `Alt+l` or `Alt+Right` = *Move to right pane* [^1]
  
-- *F4* = `Toggle Line numbers`
-- *F7* = `Toggle Spellcheck`
-- *F8* = `Toggle visible whitespace`
-- *F9* = `Insert datestamp at cursor`
-- *F11* = `Toggle reading mode`
+- `F4` = Toggle Line numbers
+- `F7` = Toggle Spellcheck
+- `F8` = Toggle visible whitespace
+- `F9` = Insert datestamp at cursor
+- `F11` = Toggle reading mode
 
-- Format Markdown table under cursor = `Ctrl+t`
-- Tabularize by character = `Leader t <char>`
+- `Ctrl+t` = Format Markdown table under cursor
+- `Leader t <char>` = Tabularize by character
 
-- **FZF**: Fuzzy find and open a file in directory* = `Ctrl+f`
-- **FZF**:Fuzzy find git commits = `Ctrl+g`
+- `Ctrl+f` = **FZF**: Fuzzy find and open a file in directory*
+- `Ctrl+g` = **FZF**:Fuzzy find git commits
  
 ### Vim Insert Mode
 
-- **FZF**: Fuzzy find in current file = `Ctrl+f`
+- `Ctrl+f` = **FZF**: Fuzzy find in current file
 
 ### Vim Visual Mode
 
-- *Yank visually selected into system clipboard* = `Ctrl+y`
+- `Ctrl+y` = *Yank visually selected into system clipboard*
 
 [^1]: Since Vim splits are only used on machines without Tmux installed, navigating Vim splits uses the same bindings as Tmux panes. The bindings are only applied in Vim if not running in a Tmux session.
  
