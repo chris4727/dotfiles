@@ -65,6 +65,7 @@ fi
 
 alias rcp="rsync --archive --human-readable --progress --verbose"
 alias trash="move_to_trash.sh"
+alias empty="empty_trash.sh"
 
 # ---  PACAGE MANAGER  ----------------------- 
 
@@ -138,4 +139,6 @@ alias gu='git pull'								    # Git pull (update)
 # ---  DOCKER  -----------------------------------
 
 alias lzd='lazydocker'									# Docker tui
+alias dup='docker-compose up -d'			  # Start docker-compose
+alias ddn='docker-compose down'			    # Stop docker-compose
 
