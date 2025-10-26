@@ -40,7 +40,7 @@ alias med='cd /$MEDIA && ll'
 
 # If eza is installed, run eza, otherwise use ls
 if command -v eza &> /dev/null; then
-  alias ls='eza --icons --group-directories-first'
+  alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --group-directories-first"
   alias la='eza -a --icons --group-directories-first'
   alias ll='eza -lAh --icons --group-directories-first --time-style=long-iso'
   # Tree with colors, icons, and show git status
