@@ -80,7 +80,7 @@ alias pacc='pacman -Qdtq | pacman -Rs'		# Cleanup packages
 # ---  APPLICATION LAUNCHERS  -----------------------------------
 
 alias tmx='tmux new-session -A -s Tmux'
-bind '"\C-t":"tmx\n"'
+#bind '"\C-t":"tmx\n"'
 alias music='rmpc'
 
 # ---  LOCK & SCREENSAVERS  ----------------------
