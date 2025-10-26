@@ -139,6 +139,7 @@ alias gu='git pull'								    # Git pull (update)
 # ---  DOCKER  -----------------------------------
 
 alias lzd='lazydocker'									# Docker tui
-alias dup='docker-compose up -d'			  # Start docker-compose
-alias ddn='docker-compose down'			    # Stop docker-compose
+alias docu='docker-compose up -d'			  # Start docker-compose
+alias docd='docker-compose down'			  # Stop docker-compose
+alias docp='docker-compose pull'			  # Pull image updates
 
