@@ -96,5 +96,15 @@ Personal dotfile repository.
 
 - `Ctrl+y` = *Yank visually selected into system clipboard*
 
+### Yazi
+
+- `y` BASH alias to start Yazi
+- `y` Yank (copy)
+- `x` Cancel yank (copy)
+- `Y` Yank (cut)
+- `X` Cancel yank (cut)
+
+
 [^1]: Since Vim splits are only used on machines without Tmux installed, navigating Vim splits uses the same bindings as Tmux panes. The bindings are only applied in Vim if not running in a Tmux session.
+
  
