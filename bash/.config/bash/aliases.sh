@@ -82,6 +82,16 @@ alias pacc='pacman -Qdtq | pacman -Rs'		# Cleanup packages
 alias tmx='tmux new-session -A -s Tmux'
 #bind '"\C-t":"tmx\n"'
 alias music='rmpc'
+function y() {
+  # y instead of yazi to start
+  # q to quit, you'll see the CWD changed
+  # Q to quit without changing cwd
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 # ---  LOCK & SCREENSAVERS  ----------------------
 
