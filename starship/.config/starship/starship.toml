@@ -18,7 +18,8 @@ continuation_prompt = '[∙∙∙](bl1)'
 
 #palette = 'gruvbox-dark'
 #palette = "rosepine-dawn"
-palette = "catppuccin-mocha"
+palette = "rosepine"
+#palette = "catppuccin-mocha"
 
 [palettes.gruvbox-dark]
 fg0 = '#fbf1c7'
