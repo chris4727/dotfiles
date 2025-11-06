@@ -333,6 +333,10 @@ bindsym $sup+c exec rofi -show calc -modi calc -no-show-match -no-sort > /dev/nu
 bindsym $sup+w exec ~/.config/i3/scripts/wifimenu \
 		-config ~/.config/rofi/rofidmenu.rasi
 
+# Rofi emoji
+bindsym $sup+e exec rofi -modi "emoji:rofimoji" -show emoji --action clipboard \
+		-config ~/.config/rofi/rofidmenu.rasi
+
 ## rofi bindings to manage clipboard (install rofi-greenclip from the AUR)
 # TODO setup rofi clipboard
 
