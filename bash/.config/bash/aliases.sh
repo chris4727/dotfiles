@@ -118,8 +118,9 @@ alias image='magick'			# Convert image with imagemagick
 # ---  SYSTEM MANAGEMENT  -----------------------------------
 
 # Show disk usage sorted and summarized
-alias dus='du -d 1 -h | sort -h'
-alias btm='btm --battery'
+alias dus='du -d 1 -h | sort -h'  # Show files sorted by size
+alias btm='btm --battery'         # Show system resources and battery
+alias dust='dust && df -h .'      # Run dust, and give a summary of disk space usage
 
 # ---  FETCH  -----------------------------------
 
