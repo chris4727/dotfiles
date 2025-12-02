@@ -21,6 +21,11 @@ Personal dotfile repository.
 - `Super+j` or `Super+Down` = *Move to lower window*
 - `Super+k` or `Super+Up` = *Move to upper window*
 
+> [!todo]
+> - `Super+z` = Fullscreen (zoomed)
+> - `Super+w` = Floating (W)indows
+> - `Super+t` = Tabbed layout
+
 ### Application launchers
 
 - `Super+Enter` = *Open new terminal window*
