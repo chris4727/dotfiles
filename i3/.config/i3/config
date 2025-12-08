@@ -197,7 +197,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Terminal
 bindsym $sup+Return exec kitty
 # Web [b]rowser
-bindsym $sup+b exec /usr/bin/qutebrowser
+bindsym $sup+b exec /usr/bin/firefox
 # Signal [m]essenger
 bindsym $sup+m exec /usr/bin/signal-desktop --password-store="kwallet6"
 # [f]ile manager
@@ -262,7 +262,7 @@ exec --no-startup-id /usr/bin/dunst
 
 #TODO Run tmux session script to setup workspaces
 exec --no-startup-id i3-msg 'workspace 1; exec kitty; bash'
-exec --no-startup-id i3-msg 'workspace 2; exec qutebrowser; workspace 1'
+exec --no-startup-id i3-msg 'workspace 2; exec firefox; workspace 2'
 #TODO Get transmission to open on startup
 #exec --no-startup-id i3-msg 'workspace 9; exec transmission; workspace 1'
 #TODO Open Mullvad VPN in workspace 10
